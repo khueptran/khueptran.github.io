@@ -1,8 +1,39 @@
 body {
-	background-color: #D0FFF0; 
-	font-family: Verdana, Arial, sans-serif;
+	background: url("images/hippies.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fffee2;
+	padding: 1em 2em;
 }
 
 h1 {
-	color: silver; font-weight: bolder; font-size: 3em;
+	font-size: 3em;	
+}
+
+h2 {
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+#homepage {
+	line-height: .5em;
+	text-transform: uppercase;
 }
