@@ -1,0 +1,58 @@
+body {
+	background: url("images/hippies_heart.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fffee2;
+}
+
+h1 {
+	font-size: 3em;	
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+#splash {
+	line-height: .5em;
+	text-transform: uppercase;
+	margin: 4em;
+	margin-bottom: 20em;
+}
+
+#slogan {
+	font-size: 1.5em;
+}
+
+nav {
+	background: rgba(255,254,226,.5);
+	color: #B27B6A;
+	text-align: center;
+	padding: 2% 4% 2% 4%;
+}
+
+.column {
+	background: rgba(255,254,226,.9);
+	padding: 5%;
+	border-radius: 50%;
+	width: 15%;
+	box-shadow: 5px 5px 60px #B27B6A;
+}
