@@ -1,0 +1,97 @@
+body {
+	background: url("images/hippies_heart.jpg") no-repeat fixed center top;
+	background-size: cover;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #424242;
+}
+
+h1 {
+	font-size: 3em;	
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+a {
+	color: #CAFFF2;
+}
+
+header {
+	background: rgba(66,66,66,.7);
+	color: #fff;
+	margin: 3em;
+	padding: 1.5em;
+	line-height: .5em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 33%;
+	width: 25em;
+}
+
+#slogan {
+	font-size: 1.5em;
+}
+
+nav {
+	make default white text, no underline
+	add mint colour on hover, no underline
+}
+
+#buttons {
+	background: rgb(66,66,66);
+	padding: 4%;
+}
+
+.buttons {
+	background: rgb(255,255,255);
+	border-radius: 50%;
+	width: 10%;
+	padding: 1em;
+	box-shadow: 8px 5px 10px #222;
+}
+
+#about {
+	padding: 2em 15%;
+	background: rgba(202,255,242,.8);
+}
+
+.about {
+	background: rgba(255,255,255,.9);
+	width: 80%;
+	margin: 2em;
+	padding: 2em;
+	box-shadow: 5px 5px 10px #424242;
+}
+
+footer {
+	margin-top: 30em;
+	background: rgba(66,66,66,.9);
+	padding: 2em 15%;
+	color: #fff;
+	text-align: center;
+}
+
+col {
+	background: rgb(66,66,66);
+	padding: 5%;
+	border-radius: 50%;
+	width: 15%;
+	box-shadow: 5px 5px 60px #222;
+}
