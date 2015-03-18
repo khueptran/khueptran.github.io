@@ -1,8 +1,14 @@
 body {
-	background: url("images/hippies_heart.jpg") no-repeat fixed center top;
+	background: url("images/hippies.jpg") no-repeat fixed center top;
 	background-size: cover;
-	font-family: Helvetica, Arial, sans-serif;
 	color: #424242;
+	line-height: 140%;
+	max-width: 60;
+	font-family: 'Kreon', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -29,10 +35,17 @@ h6 {
 	font-size: 1em;
 }
 
+p {
+	width: ;
+}
+
 a {
 	color: #CAFFF2;
 }
 
+a:hover {
+	color: #fff;
+}
 header {
 	background: rgba(66,66,66,.7);
 	color: #fff;
@@ -74,10 +87,14 @@ nav {
 
 .about {
 	background: rgba(255,255,255,.9);
-	width: 80%;
+	width: 60%;
 	margin: 2em;
 	padding: 2em;
 	box-shadow: 5px 5px 10px #424242;
+}
+
+.headspace{
+	margin-bottom: .5em;
 }
 
 footer {
