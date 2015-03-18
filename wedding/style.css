@@ -4,11 +4,14 @@ body {
 	color: #424242;
 	line-height: 140%;
 	max-width: 60;
-	font-family: 'Kreon', serif;
+	font-family: 'Karma', serif;
+	font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	margin-bottom: .5em;
 }
 
 h1 {
@@ -54,12 +57,13 @@ header {
 	line-height: .5em;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 33%;
+	margin-bottom: 60%;
 	width: 25em;
 }
 
 #slogan {
 	font-size: 1.5em;
+	margin-top: 1.5em;
 }
 
 nav {
@@ -91,10 +95,6 @@ nav {
 	margin: 2em;
 	padding: 2em;
 	box-shadow: 5px 5px 10px #424242;
-}
-
-.headspace{
-	margin-bottom: .5em;
 }
 
 footer {
