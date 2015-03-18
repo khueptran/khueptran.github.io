@@ -6,6 +6,7 @@ body {
 	font-family: 'Karma', serif;
 	font-weight: 400;
 	font-size: 16px;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,13 +48,13 @@ a:hover {
 }
 header {
 	background: rgba(66,66,66,.7);
-	color: #fff;
-	margin: 3em;
+	color: #fffee2;
+	margin-top: 3em;
+	margin-left: 3em;
 	padding: 1.5em;
 	line-height: .5em;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 30%;
 	width: 25em;
 }
 
@@ -63,12 +64,13 @@ header {
 }
 
 #buttons {
+	margin-top: 35%;
 	background: rgb(66,66,66);
 	padding: 4%;
 }
 
 .buttons {
-	background: rgb(255,255,255);
+	background: #fff;
 	border-radius: 50%;
 	width: 10%;
 	padding: 1em;
@@ -89,7 +91,6 @@ header {
 }
 
 footer {
-	margin-top: 30em;
 	background: rgba(66,66,66,.9);
 	padding: 2em 15%;
 	color: #fff;
