@@ -2,10 +2,10 @@ body {
 	background: url("images/hippies.jpg") no-repeat fixed center top;
 	background-size: cover;
 	color: #424242;
-	line-height: 140%;
-	max-width: 60;
+	line-height: 1.4em;
 	font-family: 'Karma', serif;
 	font-weight: 400;
+	font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,10 +38,6 @@ h6 {
 	font-size: 1em;
 }
 
-p {
-	width: ;
-}
-
 a {
 	color: #CAFFF2;
 }
@@ -57,18 +53,13 @@ header {
 	line-height: .5em;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 60%;
+	margin-bottom: 30%;
 	width: 25em;
 }
 
 #slogan {
 	font-size: 1.5em;
 	margin-top: 1.5em;
-}
-
-nav {
-	make default white text, no underline
-	add mint colour on hover, no underline
 }
 
 #buttons {
