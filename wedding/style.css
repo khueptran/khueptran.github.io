@@ -24,11 +24,11 @@ h2 {
 }
 
 h3 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 h4 {
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 h5 {
@@ -48,7 +48,7 @@ a:hover {
 }
 header {
 	background: rgba(66,66,66,.7);
-	color: #fffee2;
+	color: #fff;
 	margin-top: 3em;
 	margin-left: 3em;
 	padding: 1.5em;
@@ -63,32 +63,46 @@ header {
 	margin-top: 1.5em;
 }
 
-#buttons {
-	margin-top: 35%;
-	background: rgb(66,66,66);
-	padding: 4%;
+#intro {
+	margin-top: 20%;
+	background: #fff;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 4em;
 }
 
-.buttons {
-	background: #fff;
-	border-radius: 50%;
-	width: 10%;
-	padding: 1em;
-	box-shadow: 8px 5px 10px #222;
+#introtext {
+	font-weight: 400;
+	line-height: 1.5em;
 }
 
 #about {
-	padding: 2em 15%;
-	background: rgba(202,255,242,.8);
+	background: #fff;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .about {
-	background: rgba(255,255,255,.9);
-	width: 60%;
-	margin: 2em;
-	padding: 2em;
-	box-shadow: 5px 5px 10px #424242;
+	color: #fff;
+	width: 30%;
+	padding:3em;
 }
+
+#khue {
+	background: url(images/khue.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+#simon {
+	background: url(images/simon.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+#us {
+	background: url(images/snorkel.jpg) no-repeat center top;
+	background-size: cover;
+}
+
 
 footer {
 	background: rgba(66,66,66,.9);
