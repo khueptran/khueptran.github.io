@@ -7,6 +7,7 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	margin: 0;
+	width: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +25,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.8em;
+	font-size: 1.5em;
 }
 
 h4 {
@@ -46,6 +47,21 @@ a {
 a:hover {
 	color: #fff;
 }
+
+.button {
+	background: #424242;
+	margin-top: 2.5em;
+	padding: 1em 1.5em;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.button:hover {
+	background: rgba(66,66,66,.85);
+	color: #fff;
+}
+
 header {
 	background: rgba(66,66,66,.7);
 	color: #fff;
@@ -67,8 +83,7 @@ header {
 	margin-top: 20%;
 	background: #fff;
 	text-align: center;
-	padding-top: 2em;
-	padding-bottom: 4em;
+	padding: 3em 3em 6em 3em;
 }
 
 #introtext {
@@ -78,43 +93,67 @@ header {
 
 #about {
 	background: #fff;
-	padding-top: 2em;
-	padding-bottom: 2em;
 }
 
 .about {
+	color: #424242;
+	display: inline-block;
+	width: 25%;
+	margin: 0 3em 6em 3em;
+}
+
+#events {
+	background: #fff;
+}
+
+.banner {
+	height: 15em;
+	text-align: center;
 	color: #fff;
-	width: 30%;
-	padding:3em;
+	overflow: hidden;
 }
 
-#khue {
-	background: url(images/khue.jpg) no-repeat center top;
+.headline {
+	background: rgba(66,66,66,.7);
+	padding: 4em;
+	height: 15em;
+	letter-spacing: 2px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.details {
+	padding: 3em;
+	text-align: center;
+}
+
+#friday {
+	background: url(images/eff.jpg) no-repeat center top;
 	background-size: cover;
 }
 
-#simon {
-	background: url(images/simon.jpg) no-repeat center top;
+#saturday {
+	background: url(images/hammock.jpg) no-repeat center top;
 	background-size: cover;
 }
 
-#us {
-	background: url(images/snorkel.jpg) no-repeat center top;
+#sunday {
+	background: url(images/kissing.jpg) no-repeat center top;
 	background-size: cover;
 }
 
+#monday {
+	background: url(images/brunch.jpg) no-repeat center top;
+	background-size: cover;
+}
 
 footer {
 	background: rgba(66,66,66,.9);
-	padding: 2em 15%;
 	color: #fff;
 	text-align: center;
 }
 
-col {
-	background: rgb(66,66,66);
-	padding: 5%;
-	border-radius: 50%;
-	width: 15%;
-	box-shadow: 5px 5px 60px #222;
+.address {
+	display: inline-block;
+	padding: 6em 3em;
 }
