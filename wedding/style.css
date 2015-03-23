@@ -129,21 +129,16 @@ header {
 }
 
 #friday {
-	background: url(images/eff.jpg) no-repeat fixed center top;
-	background-size: cover;
-}
-
-#saturday {
 	background: url(images/hammock.jpg) no-repeat fixed center top;
 	background-size: cover;
 }
 
-#sunday {
+#saturday {
 	background: url(images/kissing.jpg) no-repeat fixed center top;
 	background-size: cover;
 }
 
-#monday {
+#sunday {
 	background: url(images/brunch.jpg) no-repeat fixed center top;
 	background-size: cover;
 }
