@@ -132,7 +132,7 @@ header {
 	background-size: cover;
 }
 
-#saturday {
+.saturday {
 	background: url(images/hammock.jpg) no-repeat center top;
 	background-size: cover;
 }
