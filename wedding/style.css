@@ -129,6 +129,7 @@ header {
 	margin: 0 auto;
 	padding: 3em;
 	text-align: center;
+	display: inline-block;
 }
 
 #friday {
