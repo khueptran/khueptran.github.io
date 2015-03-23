@@ -155,3 +155,10 @@ footer {
 	margin: 6em 3em;
 	padding: 1em;
 }
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
