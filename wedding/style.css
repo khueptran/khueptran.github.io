@@ -1,3 +1,4 @@
+*{margin:0;padding:0;box-sizing:border-box;}
 body {
 	background: url("images/hippies.jpg") no-repeat fixed center top;
 	background-size: cover;
@@ -6,8 +7,6 @@ body {
 	font-family: 'Karma', serif;
 	font-weight: 400;
 	font-size: 16px;
-	margin: 0;
-	width: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,9 +95,9 @@ header {
 
 .about {
 	color: #424242;
-	display: inline-block;
-	width: 25%;
-	margin: 0 3em 6em 3em;
+	float:left;
+	width: 33.33%;
+	padding: 0 3em 6em 3em;
 }
 
 #events {
