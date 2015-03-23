@@ -155,5 +155,7 @@ footer {
 
 .address {
 	display: inline-block;
-	padding: 6em 3em;
+	width: 16em;
+	margin: 6em 3em;
+	padding: 1em;
 }
