@@ -131,6 +131,10 @@ header {
 	text-align: center;
 }
 
+.display {
+	display: inline-block;
+}
+
 #friday {
 	background: url(images/hammock.jpg) no-repeat fixed center top;
 	background-size: cover;
