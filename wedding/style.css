@@ -55,11 +55,14 @@ a:hover {
 	display: inline-block;
 	text-decoration: none;
 	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 12px;
 }
 
 .button:hover {
 	background: rgba(66,66,66,.85);
-	color: #fff;
 }
 
 header {
