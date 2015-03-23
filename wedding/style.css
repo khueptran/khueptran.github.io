@@ -122,19 +122,9 @@ header {
 	text-transform: uppercase;
 }
 
-.event {
-	margin: 2em auto;
-	padding: 3em;
-	width: 40%;
-	display: inline-block;
-}
-
 .location {
+	padding: 3em;
 	text-align: center;
-}
-
-.details {
-	text-align: left;
 }
 
 #friday {
