@@ -1,9 +1,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body {
-	background: url("images/hippies.jpg") no-repeat fixed center top;
-	background-size: cover;
+	background: #fff;
 	color: #424242;
-	line-height: 1.4em;
 	font-family: 'Karma', serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -12,15 +10,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
+}
+
+h3, h4, h5, h6 {
 	margin-bottom: .5em;
 }
 
 h1 {
-	font-size: 3em;	
+	font-size: 3.5em;
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 h3 {
@@ -29,14 +30,6 @@ h3 {
 
 h4 {
 	font-size: 1.5em;
-}
-
-h5 {
-	font-size: 1.2em;
-}
-
-h6 {
-	font-size: 1em;
 }
 
 a {
@@ -64,40 +57,61 @@ a:hover {
 	background: rgba(66,66,66,.85);
 }
 
-header {
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
+.whitetext {
 	background: rgba(66,66,66,.7);
 	color: #fff;
-	margin-top: 3em;
-	margin-left: 3em;
+}
+
+#header {
+	background: url("images/hippies.jpg") no-repeat fixed center top;
+	background-size: cover;
+	padding: 3em 0 22em 3em;
+}
+
+header {
 	padding: 1.5em;
-	line-height: .5em;
 	text-transform: uppercase;
 	text-align: center;
-	width: 25em;
+	width: 30em;
 }
 
-#slogan {
+#subtitle {
 	font-size: 1.5em;
-	margin-top: 1.5em;
+	font-weight: 400;
 }
 
-#intro {
-	margin-top: 20%;
+#hello {
 	text-align: center;
-	padding: 3em 3em 6em 3em;
+	padding: 3em 3em 4em 3em;
 	font-weight: 400;
 	line-height: 1.5em;
 }
 
-#about {
-	background: #fff;
+.maxcolwidth3 {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.about {
-	color: #424242;
+.colwidth3 {
 	float:left;
 	width: 33.33%;
+}
+
+.story {
 	padding: 0 3em 6em 3em;
+}
+
+img {
+	width: 100%;
+	padding-bottom: 2em;
 }
 
 #events {
@@ -106,25 +120,34 @@ header {
 
 .banner {
 	height: 15em;
-	text-align: center;
-	color: #fff;
 	overflow: hidden;
 }
 
 .headline {
-	background: rgba(66,66,66,.7);
-	padding: 4em;
-	height: 15em;
+	padding: 5em;
+	height: inherit;
 	letter-spacing: 2px;
-	font-weight: 400;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .location {
-	margin: 0 auto;
-	padding: 3em;
+	padding: 5em 0;
 	text-align: center;
-	display: inline-block;
+}
+
+.time {
+	margin: 1em 0;
+}
+
+.colwidth2 {
+	float: left;
+	width: 50%;
+}
+
+#weddingday {
+	max-width: 750px;
+	margin: 0 auto;
 }
 
 #friday {
@@ -143,21 +166,16 @@ header {
 }
 
 footer {
-	background: rgba(66,66,66,.9);
+	background: #424242;
 	color: #fff;
-	text-align: center;
 }
 
 .address {
-	display: inline-block;
-	width: 16em;
-	margin: 6em 3em;
-	padding: 1em;
+	padding: 6em 2em;
+	text-align: center;
 }
-.clearfix:after { 
-	content: "."; 
-	visibility: hidden; 
-	display: block; 
-	height: 0; 
-	clear: both;
+
+.map {
+	display: block;
+	margin-top: 1em;
 }
