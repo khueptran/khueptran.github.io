@@ -17,7 +17,7 @@ h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 3.5em;
+	font-size: 3em;
 }
 
 h2 {
@@ -70,22 +70,56 @@ a:hover {
 	color: #fff;
 }
 
-#header {
-	background: url("images/hippies.jpg") no-repeat fixed center top;
-	background-size: cover;
-	padding: 3em 0 22em 3em;
+header {
+	background: #fff;
+	color: #424242;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 1em;
+	position: fixed;
+	border-bottom: 4px solid rgba(66,66,66,.5);
 }
 
-header {
-	padding: 1.5em;
-	text-transform: uppercase;
-	text-align: center;
-	width: 30em;
+header div {
+	float: left;
+	width: 50%;
 }
 
 #subtitle {
 	font-size: 1.5em;
 	font-weight: 400;
+}
+
+nav {
+	float:right;
+	font-family: 'Raleway', sans-serif;
+	width: 50%;
+	text-align: center;
+	padding: 2em;
+}
+
+nav a{
+	text-decoration: none;
+	color: #424242;
+	width: 33.33%;
+	float:left;
+	margin: .5em;
+	padding: .5em;
+}
+
+nav a:hover{
+	color: #424242;
+	font-weight: 800;
+}
+
+#hippies {
+	background: url("images/hippies.jpg") no-repeat fixed center top;
+	background-size: cover;
+	padding-top: 30em;
+}
+
+#background {
+	background: #fff;
 }
 
 #hello {
