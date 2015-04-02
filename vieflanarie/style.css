@@ -21,7 +21,6 @@ h3 {
 a {
 	color: #272525;
 	text-decoration: none;
-	font-family: 'Muli', sans-serif;
 }
 
 a:hover {
@@ -45,6 +44,7 @@ header nav a {
 	margin: 2em;
 	padding: 1em;
 	border-top: 2px solid #272525;
+	font-family: 'Muli', sans-serif;
 }
 
 header nav a:hover{
@@ -54,22 +54,22 @@ header nav a:hover{
 }
 
 article#featured{
-	max-width: 1250px;
+	max-width: 1200px;
 	margin: 4em auto;
 	height: 20em;
 }
 
 article#featured img{
-	width: 66%;
-	float: left;
+	width: 66.33%;
 	height: inherit;
+	float: left;
 }
 
 article#featured div {
-	width: 33%;
-	float:right;
+	width: 33.33%;
 	background: #eee;
-	padding: 2em;
+	float: left;
+	padding: 2em 0;
 }
 
 article#featured a {
