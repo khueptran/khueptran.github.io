@@ -36,6 +36,12 @@ a:hover {
 	clear: both;
 }
 
+.maxwidth {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
 header nav {
 	float: right;
 	margin: 2em;
@@ -58,7 +64,6 @@ header nav a:hover{
 }
 
 article#featured{
-	max-width: 1200px;
 	margin: 3em auto;
 	height: 400px;
 }
@@ -91,7 +96,7 @@ article h2 {
 }
 
 article p {
-	line-height: 1.2em;
+	line-height: 1.3em;
 	font-family: 'Muli', sans-serif;
 }
 
@@ -120,13 +125,14 @@ aside {
 }
 
 aside>div {
-	padding: 2em;
+	padding: 2em 0;
 	border-right: 2px solid #3E4256;
 }
 
 aside a {
 	display: block;
 	margin-bottom: .5em;
+	font-family: 'Muli', sans-serif;
 }
 
 aside h3 {
@@ -151,46 +157,52 @@ aside div+div {
 	width: 66%;
 }
 
-section#blog {
+section#categories {
 	margin-top: 2em;
 }
 
-section#blog article {
-	width: 25%;
+section#categories>div {
+	float: right;
+	width: 75%;
+}
+
+section#categories article {
+	width: 33.33%;
 	float: left;
 }
 
-section#blog div {
+section#categories div.blog {
 	background: rgba(238, 238, 238,.5);
 	padding: 1em;
-	margin: 2em;
+	margin: 2em 0 2em 2em;
 }
 
-section#blog img {
+section#categories img {
 	border-radius: 50%;
 	width: 100%;
 	margin-bottom: 1em;
 }
 
-footer {
-	background: #eee;
-	border-top: 2px solid #463E56;
-}
-
 footer>div {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 2em;
+	max-width: 1000px;
+	margin: 4em auto;
+	padding: 4em;
+	border-top: 2px solid #463E56;
 }
 
 footer nav {
 	float: left;
 	width: 50%;
+	height: 230px;
 }
 
 footer nav div {
 	float: left;
-	width: 33.33%;
+	width: 50%
+}
+
+footer nav div.padding {
+	padding-left: 4em;
 }
 
 footer h3 {
@@ -208,14 +220,20 @@ footer nav a {
 footer div#brand {
 	float: right;
 	width: 50%;
+	height: 230px;
 }
 
 footer div#brand div {
 	display: block;
-	margin: 0 8em 2em 4em;
+	margin: 0 4em 1em 6em;
 }
 
 footer a.social {
 	display: inline-block;
 	margin: 0 1em;
+}
+
+footer p {
+	font-family: 'Muli', sans-serif;
+	background: #eee;
 }
