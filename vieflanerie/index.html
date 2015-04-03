@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>vie flanerie</title>
-		<link href='http://fonts.googleapis.com/css?family=Rozha+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+		<title>vie flanerie</title>
+		<link href="http://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<meta charset="UTF-8">
 </head>
 <body>
 	<header class="clearfix">
-		<img src="images/logo_small.jpg">
-		<nav>
-			<a href="#">Blog</a>
-			<a href="#">About</a>
-			<a href="#">Contact</a>
-		</nav>
+		<div class="maxwidth">		
+  			<img src="images/logo_small.jpg">
+			<nav>
+				<a href="#">Blog</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+			</nav>
+  		</div>
 	</header>
-	<article id="featured">
+	<article id="featured" class="maxwidth">
 		<img src="images/beach.jpg" title="featured post" alt="rows of umbrellas on a beach">
 		<div>
 			<div class="wrapper">
@@ -33,83 +35,11 @@
 			</div>
 		</div>	
 	</article>
-	<aside class="clearfix">
-		<div>
+	<section class="maxwidth">	
+  		<aside>
 			<div>
-				<h3>Blog Features</h3>
-				<a href="#">lets be |x|</a>
-				<a href="#">when in |x|</a>
-				<a href="#">pieces that pop</a>
-				<a href="#">high low flow</a>
-				<a href="#">field tested</a>
-			</div>
-			<div>
-				<h3>Go Digging</h3>
-				<a href="#">2014</a>
-				<a href="#">2013</a>
-			</div>
-			<div id="subscribe">
-				<h3>Subscribe</h3>
-				<p>email address</p>
-				<a class="readmore" href="#">Submit</a>
-			</div>
-		</div>
-	</aside>
-	<section id="blog" class="clearfix">
-		<article>
-			<div>
-				<img src="images/toes_square.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="readmore" href="#">Read More</a>
-			</div>
-		</article>
-		<article>
-			<div>
-				<img src="images/market_square.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="readmore" href="#">Read More</a>
-			</div>
-		</article>
-		<article>
-			<div>
-				<img src="images/sydney_square.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="readmore" href="#">Read More</a>
-			</div>
-		</article>
-		<article>
-			<div>
-				<img src="images/brooch_square.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="readmore" href="#">Read More</a>
-			</div>
-		</article>
-		<article>
-			<div>
-				<img src="images/bikes_square.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="readmore" href="#">Read More</a>
-			</div>
-		</article>
-		<article>
-			<div>
-				<img src="images/waiter_square.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="readmore" href="#">Read More</a>
-			</div>
-		</article>
-	</section>
-	<footer class="clearfix">
-		<div>
-			<nav>
 				<div>
-					<h3><a href="#">Blog</a></h3>
+					<h3>Blog Features</h3>
 					<a href="#">lets be |x|</a>
 					<a href="#">when in |x|</a>
 					<a href="#">pieces that pop</a>
@@ -117,12 +47,94 @@
 					<a href="#">field tested</a>
 				</div>
 				<div>
-					<h3><a href="#">About</a></h3>
+					<h3>Go Digging</h3>
+					<a href="#">2014</a>
+					<a href="#">2013</a>
 				</div>
+				<div id="subscribe">
+					<h3>Subscribe</h3>
+					<p>email address</p>
+					<a class="readmore" href="#">Submit</a>
+				</div>
+			</div>
+		</aside>
+		<section id="categories" class="clearfix">
+			<div>
+				<article>
+					<div class="blog">
+						<img src="images/toes_square.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a class="readmore" href="#">Read More</a>
+					</div>
+				</article>
+				<article>
+					<div class="blog">
+						<img src="images/market_square.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a class="readmore" href="#">Read More</a>
+					</div>
+				</article>
+				<article>
+					<div class="blog">
+						<img src="images/sydney_square.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a class="readmore" href="#">Read More</a>
+					</div>
+				</article>
+				<article>
+					<div class="blog">
+						<img src="images/brooch_square.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a class="readmore" href="#">Read More</a>
+					</div>
+				</article>
+				<article>
+					<div class="blog">
+						<img src="images/bikes_square.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a class="readmore" href="#">Read More</a>
+					</div>
+				</article>
+				<article>
+					<div class="blog">
+						<img src="images/waiter_square.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a class="readmore" href="#">Read More</a>
+					</div>
+				</article>
+  			</div>
+		</section>
+  	</section>
+	<footer class="clearfix">
+		<div>
+			<nav>
 				<div>
-					<h3><a href="#">Contact</a></h3>
-					<a href=mailto:"curator@vieflanerie.com">curator@vieflanerie.com</a>
-				</div>
+                  			<div class="padding">
+						<h3><a href="#">Blog</a></h3>
+						<a href="#">lets be |x|</a>
+						<a href="#">when in |x|</a>
+						<a href="#">pieces that pop</a>
+						<a href="#">high low flow</a>
+						<a href="#">field tested</a>
+			                  </div>
+			        </div>
+				<div>
+                  			<div class="padding">
+						<h3><a href="#">About</a></h3>
+					</div>
+              			</div>
+				<div>
+                  			<div class="padding">
+						<h3><a href="#">Contact</a></h3>
+						<a href="mailto:curator@vieflanerie.com">curator@vieflanerie.com</a>
+					</div>
+              			</div>
 			</nav>
 			<div id="brand">
 				<div>
@@ -133,9 +145,9 @@
 				</div>
 				<div>
 					<img src="images/logo_small.jpg">
-				</div>
+        			 </div>
 			</div>	
-		</div>	
+          		<p>© 2015 vie flanerie</p>
+  		</div>
 	</footer>
-</body>
 </html>
