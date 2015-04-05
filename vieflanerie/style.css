@@ -52,7 +52,7 @@ header nav a {
 	padding: .5em;
 	border-left: 2px solid #272525;
 	border-right: 2px solid #272525;
-	font-family: 'Muli', sans-serif;
+	text-transform: lowercase;
 }
 
 header nav a:hover{
@@ -91,13 +91,11 @@ h1+p h2+p h3+p {
 
 article h2 {
 	font-size: 2.5em;
-	font-family: 'Francois One', sans-serif;
 	margin-bottom: .5em;
 }
 
 article p {
 	line-height: 1.3em;
-	font-family: 'Muli', sans-serif;
 }
 
 .readmore {
@@ -110,7 +108,6 @@ article p {
 	text-align: center;
 	margin-top: 1.5em;
 	border-radius: .3em;
-	font-family: 'Muli', sans-serif;
 }
 
 .readmore:hover {
@@ -132,12 +129,10 @@ aside>div {
 aside a {
 	display: block;
 	margin-bottom: .5em;
-	font-family: 'Muli', sans-serif;
 }
 
 aside h3 {
 	font-size: 2em;
-	font-family: 'Francois One', sans-serif;
 }
 
 aside h3+a {
@@ -214,7 +209,6 @@ footer h3 {
 footer nav a {
 	display: block;
 	margin-top: .5em;
-	font-family: 'Muli', sans-serif;
 }
 
 footer div#brand {
@@ -231,8 +225,4 @@ footer div#brand div {
 footer a.social {
 	display: inline-block;
 	margin: 0 1em;
-}
-
-footer p {
-	font-family: 'Muli', sans-serif;
 }
