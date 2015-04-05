@@ -200,10 +200,14 @@ footer nav div.padding {
 	padding-left: 4em;
 }
 
-footer h3 {
+footer nav h3 {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	margin-bottom: .5em;
+}
+
+footer nav h3 a {
+	color: #3E4E56;
 }
 
 footer nav a {
