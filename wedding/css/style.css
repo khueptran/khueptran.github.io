@@ -1,6 +1,6 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body {
-	background: #fff;
+	background: #e9eaec;
 	color: #424242;
 	font-family: 'Karma', serif;
 	font-weight: 400;
@@ -9,35 +9,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-}
-
-h3, h4, h5, h6 {
-	margin-bottom: .5em;
-}
-
-h1 {
-	font-size: 3.5em;
-}
-
-h2 {
-	font-size: 2.5em;
-}
-
-h3 {
-	font-size: 1.5em;
-}
-
-h4 {
-	font-size: 1.5em;
 }
 
 a {
-	color: #CAFFF2;
+	color: #CCB0B5;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #fff;
+	color: #B29DA1;
 }
 
 .button {
@@ -65,104 +45,188 @@ a:hover {
 	clear: both;
 }
 
-.whitetext {
-	background: rgba(66,66,66,.7);
-	color: #fff;
+.maxwidth {
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
-#header {
-	background: url("images/hippies.jpg") no-repeat fixed center top;
-	background-size: cover;
-	padding: 3em 0 22em 3em;
+.cursive {
+	font-family: 'Satisfy', cursive;
+}
+
+.vast {
+	font-family: 'Vast Shadow', cursive;
+	font-weight: 400;
 }
 
 header {
-	padding: 1.5em;
-	text-transform: uppercase;
-	text-align: center;
-	width: 30em;
+	background: url(images/hippies.jpg) no-repeat center top;
+	background-size: cover;
+	height: 40em;
+	position: relative;
 }
 
-#subtitle {
+header aside {
+	background: rgba(66,66,66,.7);
+	color: #fff;
+	width: 33.33%;
+	padding: 3em;
+	position:absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+header h1 {
+	font-size: 3em;
+	color: #CCB0B5;
+}
+
+header h2 {
 	font-size: 1.5em;
 	font-weight: 400;
 }
 
-#hello {
-	text-align: center;
-	padding: 3em 3em 4em 3em;
-	font-weight: 400;
-	line-height: 1.5em;
+header nav {
+	margin: 3em 0;
 }
 
-.maxcolwidth3 {
-	max-width: 1200px;
+header nav a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: .1em;
+	font-family: 'Raleway', sans-serif;
+}
+
+header nav a+a {
+	margin-top: 1em;
+}
+
+header nav div a {
+	color: #CCB0B5;
+	margin-top: 1em;
+}
+
+section#about>div {
+	padding: 3em 3em 4em 3em;
+}
+
+section#about h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+section#about h1 span.small {
+	font-size: .6em;
+}
+
+section#about h1 span#two {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .1em;
+}
+
+section#about h1 span#two:before {
+	content:"\2013";
+}
+
+section#about h1 span#two:after {
+	content:"\2013";
+}
+
+section#about h1 span#three {
+	font-weight: 400;
+	font-size: .8em;
+}
+
+section#about hr {
+	max-width: 380px;
 	margin: 0 auto;
 }
 
-.colwidth3 {
-	float:left;
+section#about hr+p {
+	margin-top: 1.5em;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+section#about div div {
+	width: 66.33%;
+	margin: 2em auto;
+	background: #fff;
+	padding: 1.5em;
+}
+
+section#about div div p,img {
+	float: left;
+	padding: 1em;
+}
+
+section#about div div p {
+	width: 66.33%;
+	text-align: justify;
+}
+
+section#about div div img {
 	width: 33.33%;
 }
 
-.story {
-	padding: 0 3em 6em 3em;
+section#about #signoff {
+	display: block;
+	padding: 1.5em;
 }
 
-img {
-	width: 100%;
-	padding-bottom: 2em;
+section#about img {
+	border-radius: 50%;
 }
 
-#events {
-	background: #fff;
+section#schedule {
+	margin: 2em auto;
 }
 
-.banner {
-	height: 15em;
-	overflow: hidden;
-}
-
-.headline {
-	padding: 5em;
-	height: inherit;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+section#schedule h1.vast {
+	font-size: 4em;
 	text-align: center;
+	margin-bottom: 2em;
+	position: relative;
 }
 
-.location {
-	padding: 5em 0;
-	text-align: center;
+section#schedule h1 span.title {
+	padding: .5em;
+	background: #e9eaec;
+	position: absolute;
+	right: 33.33%;
+	bottom: -70px;
 }
 
-.time {
-	margin: 1em 0;
-}
-
-.colwidth2 {
-	float: left;
-	width: 50%;
-}
-
-#weddingday {
-	max-width: 750px;
+section#schedule h1 hr {
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
-#friday {
-	background: url(images/hammock.jpg) no-repeat fixed center top;
-	background-size: cover;
+section#schedule div {
+	float: left;
+	width: 25%;
+	padding: 1em 0 0 3em;
 }
 
-#saturday {
-	background: url(images/kissing.jpg) no-repeat fixed center top;
-	background-size: cover;
+section#schedule a {
+	color: #424242;
+	display: block;
+	border-top: 2px solid #424242;
 }
 
-#sunday {
-	background: url(images/brunch.jpg) no-repeat fixed center top;
-	background-size: cover;
+section#schedule a:hover {
+	color: #45673E;
+	border-top: 2px solid #45673E;
+}
+
+section#schedule a:visited {
+	color: #45673E;
+	border-top: 2px solid #45673E;
 }
 
 footer {
@@ -170,7 +234,9 @@ footer {
 	color: #fff;
 }
 
-.address {
+footer section.address {
+	float: left;
+	width: 33.33%;
 	padding: 6em 2em;
 	text-align: center;
 }
