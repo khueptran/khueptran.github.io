@@ -108,9 +108,13 @@ header nav div a {
 	color: #CCB0B5;
 	margin-top: 1em;
 }
+
+section#about {
+	background: #fff;
+}
+
 section#about>div {
 	padding: 3em 3em 4em 3em;
-	background: #fff;
 }
 
 section#about h1 {
@@ -154,66 +158,58 @@ section#about hr+p {
 	font-family: 'Raleway', sans-serif;
 }
 
-section#about div div {
-	background: url(images/snorkel.jpg) top center;
-	background-size: cover;
-	border-radius: 50%;
-	width: 280px;
-	height: 280px;
-	margin: 1.5em auto;
-}
-
-section#about div div div {
-	background: rgba(66,66,66,.5);
-	color: #fff;
-	text-align: center;
-	padding-top: 6em;
-}
-
-section#schedule {
-	margin: 2em auto;
-}
-
-section#schedule h1.vast {
+section h1.vast {
 	font-size: 4em;
 	text-align: center;
-	margin-bottom: 2em;
+	margin: 1.5em 0 .5em;
 	position: relative;
 }
 
-section#schedule h1 span.title {
+section h1 span.title {
 	padding: .5em;
 	background: #e9eaec;
 	position: absolute;
-	right: 33.33%;
+	right: 30%;
+	left: 30%;
 	bottom: -70px;
 }
 
-section#schedule h1 hr {
+section h1 hr {
 	max-width: 1000px;
-	margin: 1.5em auto;
+	margin: 0 auto;
+}
+
+section#schedule h1 {
+	margin-bottom: 1em;
 }
 
 section#schedule div {
 	float: left;
 	width: 25%;
-	padding: 1em 0 0 3em;
+	padding: 1.5em 0 0 3em;	
+	/*border-top: 5px solid #424242;*/
 }
 
-section#schedule a {
-	color: #424242;
-	display: block;
-	border-top: 2px solid #424242;
-}
-
-section#schedule a:hover {
+/*section#schedule div:hover {
 	color: #45673E;
-	border-top: 2px solid #45673E;
+	border-top-color: #45673E;
+}*/
+
+section#mpls h2 {
+	font-weight: 400;
+	text-align: center;
+	margin: 4em 0 1.5em;
 }
 
-section#schedule a:visited {
-	color: #45673E;
-	border-top: 2px solid #45673E;
+section#mpls div div {
+	float: left;
+	width: 25%;
+	padding: 2em;
+}
+
+section#mpls img {
+	border-radius: 50%;
+	width: 100%;
 }
 
 footer {
