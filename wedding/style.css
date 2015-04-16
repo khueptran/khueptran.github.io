@@ -35,6 +35,7 @@ a:hover {
 
 .button:hover {
 	background: rgba(66,66,66,.85);
+	color: #fff;
 }
 
 .clearfix:after { 
@@ -114,7 +115,7 @@ section#about {
 }
 
 section#about>div {
-	padding: 3em 3em 4em 3em;
+	padding: 3em;
 }
 
 section#about h1 {
@@ -153,7 +154,6 @@ section#about hr {
 
 section#about hr+p {
 	margin-top: 1.5em;
-	margin-bottom: 1.5em;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
@@ -161,44 +161,80 @@ section#about hr+p {
 section h1.vast {
 	font-size: 4em;
 	text-align: center;
-	margin: 1.5em 0 .5em;
-	position: relative;
+	margin-top: .5em;
+	text-transform: uppercase;
 }
 
-section h1 span.title {
-	padding: .5em;
-	background: #e9eaec;
-	position: absolute;
-	right: 30%;
-	left: 30%;
-	bottom: -70px;
+section.dash {
+	border-top: 2px dashed #424242;
 }
 
-section h1 hr {
-	max-width: 1000px;
-	margin: 0 auto;
+section#schedule {
+	padding: 1em 0 2em;
 }
 
 section#schedule h1 {
 	margin-bottom: 1em;
 }
 
-section#schedule div {
+section#schedule div.column {
 	float: left;
 	width: 25%;
-	padding: 1.5em 0 0 3em;	
-	/*border-top: 5px solid #424242;*/
+	padding: 1.5em;
 }
 
-/*section#schedule div:hover {
-	color: #45673E;
-	border-top-color: #45673E;
-}*/
+section#schedule div.column h2 {
+	margin-bottom: 1.2em;
+	border-bottom: 2px solid #424242;
+	padding-bottom: .5em;
+}
 
-section#mpls h2 {
+section#schedule div.whitebox {
+	background: #fff;
+	padding: 2.5em;
+}
+
+section#schedule a.rsvp {
+	background: #CCB0B5;
+	font-weight: 800;
+}
+
+section#schedule a.rsvp:hover {
+	background: #B29DA1;
+	color: #fff;
+}
+
+section#schedule div#saturday {
+	width: 50%;
+}
+
+section#schedule div.satcol {
+	float: left;
+	width: 50%;
+}
+
+section#schedule div#reception {
+	padding-right: 1.25em;
+}
+
+section#schedule div#after {
+	padding-left: 1.25em;
+}
+
+section h2.subtitle {
 	font-weight: 400;
 	text-align: center;
-	margin: 4em 0 1.5em;
+	margin: 1.5em 0;
+}
+
+section#mpls {
+	padding: 1em 0 2em;
+}
+
+section#mpls>div {
+	max-width: 1400px;
+	width: 80%;
+	margin: 0 auto;
 }
 
 section#mpls div div {
@@ -210,6 +246,38 @@ section#mpls div div {
 section#mpls img {
 	border-radius: 50%;
 	width: 100%;
+}
+
+section#gifts {
+	padding: 1em 0 2em;
+}
+
+section#gifts div div {
+	float: left;
+	width: 33.33%;
+	padding: 2.5em;
+}
+
+section#gifts img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+p+p {
+	margin-top: 1.2em;
+}
+
+section#rsvp {
+	padding: 1em 0 2em;
+}
+
+section#rsvp div {
+	width: 66.33%;
+	margin: 2em auto;
+}
+
+section#rsvp div a {
+	margin: 0 2em;
 }
 
 footer {
