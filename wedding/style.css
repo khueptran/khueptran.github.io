@@ -22,7 +22,7 @@ a:hover {
 
 .button {
 	background: #424242;
-	margin-top: 2.5em;
+	margin-top: 1.5em;
 	padding: 1em 1.5em;
 	display: inline-block;
 	text-decoration: none;
@@ -177,7 +177,7 @@ section#schedule h1 {
 	margin-bottom: 1em;
 }
 
-section#schedule div.column {
+section div.column {
 	float: left;
 	width: 25%;
 	padding: 1.5em;
@@ -189,17 +189,16 @@ section#schedule div.column h2 {
 	padding-bottom: .5em;
 }
 
-section#schedule div.whitebox {
+section div.whitebox {
 	background: #fff;
 	padding: 2.5em;
 }
 
-section#schedule a.rsvp {
+section a.pinkbutton {
 	background: #CCB0B5;
-	font-weight: 800;
 }
 
-section#schedule a.rsvp:hover {
+section a.pinkbutton:hover {
 	background: #B29DA1;
 	color: #fff;
 }
@@ -237,7 +236,7 @@ section#mpls>div {
 	margin: 0 auto;
 }
 
-section#mpls div div {
+section#mpls div#food div {
 	float: left;
 	width: 25%;
 	padding: 2em;
@@ -264,6 +263,10 @@ section#gifts img {
 }
 
 p+p {
+	margin-top: 1.2em;
+}
+
+a+p {
 	margin-top: 1.2em;
 }
 
