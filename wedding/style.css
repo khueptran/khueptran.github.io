@@ -58,6 +58,10 @@ a:hover {
 .vast {
 	font-family: 'Vast Shadow', cursive;
 	font-weight: 400;
+	font-size: 4em;
+	text-align: center;
+	margin-top: .5em;
+	text-transform: uppercase;
 }
 
 header {
@@ -158,13 +162,6 @@ section#about hr+p {
 	font-family: 'Raleway', sans-serif;
 }
 
-section h1.vast {
-	font-size: 4em;
-	text-align: center;
-	margin-top: .5em;
-	text-transform: uppercase;
-}
-
 section.dash {
 	border-top: 2px dashed #424242;
 }
@@ -230,21 +227,18 @@ section#mpls {
 	padding: 1em 0 2em;
 }
 
-section#mpls>div {
-	max-width: 1400px;
+section#mpls div#food {
 	width: 80%;
 	margin: 0 auto;
-}
-
-section#mpls div#food div {
-	float: left;
-	width: 25%;
-	padding: 2em;
 }
 
 section#mpls img {
 	border-radius: 50%;
 	width: 100%;
+}
+
+section#mpls div#lodging h2 {
+	margin-top: 2.5em;
 }
 
 section#gifts {
@@ -253,13 +247,8 @@ section#gifts {
 
 section#gifts div div {
 	float: left;
-	width: 33.33%;
+	width: 50%;
 	padding: 2.5em;
-}
-
-section#gifts img {
-	width: 100%;
-	margin: 0 auto;
 }
 
 p+p {
@@ -278,24 +267,26 @@ section#rsvp div {
 	width: 66.33%;
 	margin: 2em auto;
 }
-
+/*
 section#rsvp div a {
 	margin: 0 2em;
-}
+}*/
 
 footer {
 	background: #424242;
 	color: #fff;
 }
 
+footer h1 {
+	padding-top: 1em;
+}
+
+footer>div {
+	width: 66.33%;
+}
+
 footer section.address {
 	float: left;
 	width: 33.33%;
-	padding: 6em 2em;
-	text-align: center;
-}
-
-.map {
-	display: block;
-	margin-top: 1em;
+	padding: 2em 2em 6em;
 }
