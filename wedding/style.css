@@ -199,22 +199,14 @@ section a.pinkbutton:hover {
 	background: #B29DA1;
 	color: #fff;
 }
+/*
+section#schedule hr {
+	border: 1px solid #424242;
+	margin: 2.6em 0 1.7em;
+}*/
 
-section#schedule div#saturday {
-	width: 50%;
-}
-
-section#schedule div.satcol {
-	float: left;
-	width: 50%;
-}
-
-section#schedule div#reception {
-	padding-right: 1.25em;
-}
-
-section#schedule div#after {
-	padding-left: 1.25em;
+section#schedule div#afterparty {
+	margin-top: 4.5em;
 }
 
 section h2.subtitle {
@@ -344,6 +336,11 @@ label {
 	section#schedule div#after {
 		padding-left: none;
 	}
+	section#rsvp div {
+		width: 100%;
+		margin: 2em auto;
+		padding: 1em;
+	}
 }
 
 @media only screen and (max-width: 560px) {
@@ -376,11 +373,6 @@ label {
 	}
 	section#gifts div div {
 		width: 100%;
-		padding: 1em;
-	}
-	section#rsvp div {
-		width: 100%;
-		margin: 2em auto;
 		padding: 1em;
 	}
 	footer section.address {
