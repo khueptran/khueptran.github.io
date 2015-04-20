@@ -11,6 +11,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 }
 
+p+p {
+	margin-top: 1.2em;
+}
+
+a+p {
+	margin-top: 1.2em;
+}
+
 a {
 	color: #CCB0B5;
 	text-decoration: none;
@@ -20,7 +28,7 @@ a:hover {
 	color: #B29DA1;
 }
 
-.button {
+a.button {
 	background: #424242;
 	margin-top: 1.5em;
 	padding: 1em 1.5em;
@@ -31,10 +39,21 @@ a:hover {
 	font-weight: 400;
 	letter-spacing: 1px;
 	font-size: 12px;
+	text-align: center;
 }
 
-.button:hover {
+a.button:hover {
 	background: rgba(66,66,66,.85);
+	color: #fff;
+}
+
+a.pinkbutton {
+	background: #CCB0B5;
+	width: 100%;
+}
+
+a.pinkbutton:hover {
+	background: #B29DA1;
 	color: #fff;
 }
 
@@ -62,6 +81,27 @@ a:hover {
 	text-align: center;
 	margin-top: .5em;
 	text-transform: uppercase;
+}
+
+.dash {
+	border-top: 2px dashed #424242;
+}
+
+h2.subtitle {
+	font-weight: 400;
+	text-align: center;
+	margin: 1.5em 0;
+}
+
+.column {
+	float: left;
+	width: 25%;
+	padding: 1.5em;
+}
+
+.whitebox {
+	background: #fff;
+	padding: 2.5em;
 }
 
 header {
@@ -162,10 +202,6 @@ section#about hr+p {
 	font-family: 'Raleway', sans-serif;
 }
 
-section.dash {
-	border-top: 2px dashed #424242;
-}
-
 section#schedule {
 	padding: 1em 0 2em;
 }
@@ -174,49 +210,22 @@ section#schedule h1 {
 	margin-bottom: 1em;
 }
 
-section div.column {
-	float: left;
-	width: 25%;
-	padding: 1.5em;
-}
-
 section#schedule div.column h2 {
 	margin-bottom: 1.2em;
 	border-bottom: 2px solid #424242;
 	padding-bottom: .5em;
 }
 
-section div.whitebox {
-	background: #fff;
-	padding: 2.5em;
-}
-
-section a.pinkbutton {
-	background: #CCB0B5;
-}
-
-section a.pinkbutton:hover {
-	background: #B29DA1;
-	color: #fff;
-}
-/*
-section#schedule hr {
-	border: 1px solid #424242;
-	margin: 2.6em 0 1.7em;
-}*/
-
-section#schedule div#afterparty {
-	margin-top: 4.5em;
-}
-
-section h2.subtitle {
-	font-weight: 400;
-	text-align: center;
-	margin: 1.5em 0;
+section#schedule a.button {
+	width: 100%;
 }
 
 section#mpls {
 	padding: 1em 0 2em;
+}
+
+section#mpls div div#food, div#lodging, div#contact {
+	padding: 1.5em;
 }
 
 section#mpls div#food {
@@ -229,26 +238,60 @@ section#mpls img {
 	width: 100%;
 }
 
-section#mpls div#lodging h2 {
-	margin-top: 2.5em;
+section#mpls h2 {
+	font-size: 3em;
+	padding: 0 .65em;
+}
+
+section#mpls h3 {
+	font-weight: 400;
+	padding: 0 1.5em;
+}
+
+section#mpls div#lodging a.button {
+	width: 100%;
 }
 
 section#gifts {
 	padding: 1em 0 2em;
 }
 
-section#gifts div div {
+section#gifts div.twocolumn {
 	float: left;
 	width: 50%;
+}
+
+section#gifts div:first-child {
+	background: url(images/scotland.jpg) no-repeat center bottom;
+	background-size: cover;
+	overflow: hidden;
+}
+
+section#gifts div:last-child {
+	padding: 0 2.5em;
+}
+
+section#gifts div#left {
+	background: rgba(66,66,66,.5);
+	width: 100%;
+	height: 100%;
 	padding: 2.5em;
 }
 
-p+p {
-	margin-top: 1.2em;
+section#gifts div#left h2 {
+	text-align: center;
+	font-size: 4em;
+	color: #fff;
 }
 
-a+p {
-	margin-top: 1.2em;
+section#gifts div#left h2 span#scotland {
+	font-family: 'Vast Shadow', cursive;
+	font-weight: 400;
+}
+
+section#gifts div#left h2 span#to {
+	font-weight: 400;
+	font-size: .6em;
 }
 
 section#rsvp {
@@ -259,28 +302,26 @@ section#rsvp div {
 	width: 66.33%;
 	margin: 2em auto;
 }
-/*
-section#rsvp div a {
-	margin: 0 2em;
-}*/
 
 footer {
 	background: #424242;
 	color: #fff;
+	padding: 3em;
+	font-family: "Raleway", sans-serif;
 }
 
 footer h1 {
-	padding-top: 1em;
+	font-size: 3em;
+	color: #CCB0B5;
 }
 
-footer>div {
-	width: 66.33%;
+footer h2 {
+	font-size: 1.5em;
+	font-weight: 400;
 }
 
-footer section.address {
-	float: left;
-	width: 33.33%;
-	padding: 2em 2em 6em;
+footer h3 {
+	margin-top: 1.5em;
 }
 
 label {
@@ -292,6 +333,12 @@ label {
     z-index: 2;
   }
 
+@media only screen and (max-width: 1235px) {
+	.column {
+		padding: 1em;
+	}
+ } 
+
 @media only screen and (max-width: 1030px) {
 	body {
 		font-size: 14px;
@@ -301,18 +348,11 @@ label {
 		letter-spacing: 0;
 		font-size: .75em;
 	}
-	header h1 {
+	header,footer h1 {
 		font-size: 2em;
 	}
-	header h2 {
+	header,footer h2 {
 		font-size: 1em;
-	}
-	section div.column {
-		padding: 1em;
-	}
-	section div.whitebox a.button, a.pinkbutton {
-		width: 100%;
-		text-align: center;
 	}
 }
 
