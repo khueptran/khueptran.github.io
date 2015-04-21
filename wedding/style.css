@@ -87,16 +87,10 @@ a.pinkbutton:hover {
 	border-top: 2px dashed #424242;
 }
 
-h2.subtitle {
-	font-weight: 400;
-	text-align: center;
-	margin: 1.5em 0;
-}
-
 .column {
 	float: left;
 	width: 25%;
-	padding: 1.5em;
+	padding: 1em;
 }
 
 .whitebox {
@@ -107,7 +101,7 @@ h2.subtitle {
 header {
 	background: url(images/hippies.jpg) no-repeat center top;
 	background-size: cover;
-	height: 40em;
+	height: 1050px;
 	position: relative;
 }
 
@@ -224,15 +218,6 @@ section#mpls {
 	padding: 1em 0 2em;
 }
 
-section#mpls div div#food, div#lodging, div#contact {
-	padding: 1.5em;
-}
-
-section#mpls div#food {
-	width: 80%;
-	margin: 0 auto;
-}
-
 section#mpls img {
 	border-radius: 50%;
 	width: 100%;
@@ -248,12 +233,27 @@ section#mpls h3 {
 	padding: 0 1.5em;
 }
 
-section#mpls div#lodging a.button {
+section#mpls div section#food, section#lodging {
+	padding: 1.5em;
+}
+
+section#mpls section#food {
+	width: 90%;
+	margin: 0 auto;
+}
+
+section#mpls section#lodging a.button {
 	width: 100%;
 }
 
 section#gifts {
 	padding: 1em 0 2em;
+}
+
+section#gifts h2 {
+	font-weight: 400;
+	text-align: center;
+	margin: 0 0 2.5em;
 }
 
 section#gifts div.twocolumn {
@@ -278,18 +278,18 @@ section#gifts div#left {
 	padding: 2.5em;
 }
 
-section#gifts div#left h2 {
+section#gifts div#left h3 {
 	text-align: center;
 	font-size: 4em;
 	color: #fff;
 }
 
-section#gifts div#left h2 span#scotland {
+section#gifts div#left h3 span#scotland {
 	font-family: 'Vast Shadow', cursive;
 	font-weight: 400;
 }
 
-section#gifts div#left h2 span#to {
+section#gifts div#left h3 span#to {
 	font-weight: 400;
 	font-size: .6em;
 }
@@ -299,7 +299,7 @@ section#rsvp {
 }
 
 section#rsvp div {
-	width: 66.33%;
+	width: 80%;
 	margin: 2em auto;
 }
 
@@ -324,24 +324,18 @@ footer h3 {
 	margin-top: 1.5em;
 }
 
-label {
-    display: none;
-    position: absolute;
-    font-size: 1.2em;
-    top: 0.7em;
-    right: 12px; 
-    z-index: 2;
-  }
-
-@media only screen and (max-width: 1235px) {
-	.column {
-		padding: 1em;
-	}
+@media only screen and (max-width: 1440px) {
+	header {
+		height: 900px;
+	}		
  } 
 
 @media only screen and (max-width: 1030px) {
 	body {
 		font-size: 14px;
+	}
+	header {
+		height: 768px;
 	}
 	.button {
 		margin-top: 1em;
@@ -360,21 +354,9 @@ label {
 	body {
 		font-size: 12px;
 	}
-	section div.column {
+	.column {
 		width: 50%;
-	}
-
-	section#schedule div.satcol {
-		float: left;
-		width: 100%;
-	}
-
-	section#schedule div#reception {
-		padding-right: none;
-	}
-
-	section#schedule div#after {
-		padding-left: none;
+		transition: 2s ease;
 	}
 	section#rsvp div {
 		width: 100%;
@@ -383,9 +365,18 @@ label {
 	}
 }
 
-@media only screen and (max-width: 560px) {
-	footer>div {
-		width: 100%;
+@media only screen and (max-width: 480px) {
+	section#gifts div:last-child {
+		padding: 0 1em;
+	}
+
+	section#gifts div#left {
+		padding: 1.5em;
+	}
+
+	section#gifts div#left h3 {
+		font-size: 2.6em;
+		transition: 2s, ease;
 	}
 }
 
@@ -397,30 +388,26 @@ label {
 		font-size: 2em;
 		margin-top: .5em;
 	}
-	section div.column {
+	.column {
 		width: 100%;
+		trasition: 2s ease;
 	}
-	section#schedule div#saturday {
-		width: 100%;
-	}
-	section#schedule div.column h2 {
+	.column h2 {
 		margin-bottom: 1em;
 		border-bottom: none;
 		padding-bottom: .5em;
 	}
-	section h2.subtitle {
-		margin: 1.5em 1em;s
+	section#schedule div:nth-child(3) h2 {
+		display: none;
 	}
-	section#gifts div div {
+	section#gifts div.twocolumn {
 		width: 100%;
-		padding: 1em;
+		transition: 2s ease;
 	}
-	footer section.address {
-		width: 100%;
-		padding: 2em 2em .5em;
-		text-align: center;
+	section#gifts div.twocolumn:first-child {
+		margin-bottom: 1.5em;
 	}
-	footer section.address:last-child {
-		padding-bottom: 2em;
+	section#gifts div.twocolumn:last-child {
+		padding: 0;
 	}
 }
