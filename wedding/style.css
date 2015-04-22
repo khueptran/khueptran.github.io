@@ -66,6 +66,7 @@ a.pinkbutton:hover {
 }
 
 .maxwidth {
+	width: 90%;
 	max-width: 1400px;
 	margin: 0 auto;
 }
@@ -101,19 +102,15 @@ a.pinkbutton:hover {
 header {
 	background: url(images/hippies.jpg) no-repeat center top;
 	background-size: cover;
-	height: 1050px;
-	position: relative;
+	height: 40em;
 }
 
 header aside {
-	background: rgba(66,66,66,.7);
+	background: rgba(66,66,66,.5);
 	color: #fff;
-	width: 33.33%;
+	width: 100%;
+	height: inherit;
 	padding: 3em;
-	position:absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
 }
 
 header h1 {
@@ -210,6 +207,19 @@ section#schedule div.column h2 {
 	padding-bottom: .5em;
 }
 
+section#schedule div#saturday {
+	width: 50%;
+}
+
+section#schedule div#saturday div.wrapper {
+	float: left;
+	width: 50%;
+}
+
+section#schedule div#saturday div div {
+	margin-right: 3em;
+}
+
 section#schedule a.button {
 	width: 100%;
 }
@@ -235,11 +245,6 @@ section#mpls h3 {
 
 section#mpls div section#food, section#lodging {
 	padding: 1.5em;
-}
-
-section#mpls section#food {
-	width: 90%;
-	margin: 0 auto;
 }
 
 section#mpls section#lodging a.button {
@@ -355,8 +360,31 @@ footer h3 {
 		font-size: 12px;
 	}
 	.column {
+		width: 100%;
+		transition: .3s ease;
+	}
+	.mobile {
+		float: left;
 		width: 50%;
-		transition: 2s ease;
+	}
+	a.pinkbutton {
+		width: 25%%;
+	}
+	section#schedule a.button {
+		width: 50%%;
+	}
+	section#schedule div#saturday {
+		width: 100%%;
+	}
+	section#schedule div#saturday a.button {
+		width:100%;
+	}
+	section#mpls section#lodging a.button {
+		width: 50%%;
+	}
+	section#mpls #food .column {
+		width: 50%;
+		transition: .3s ease;
 	}
 	section#rsvp div {
 		width: 100%;
@@ -376,7 +404,7 @@ footer h3 {
 
 	section#gifts div#left h3 {
 		font-size: 2.6em;
-		transition: 2s, ease;
+		transition: .3s, ease;
 	}
 }
 
@@ -390,7 +418,7 @@ footer h3 {
 	}
 	.column {
 		width: 100%;
-		trasition: 2s ease;
+		trasition: .3s ease;
 	}
 	.column h2 {
 		margin-bottom: 1em;
@@ -402,7 +430,7 @@ footer h3 {
 	}
 	section#gifts div.twocolumn {
 		width: 100%;
-		transition: 2s ease;
+		transition: .3s ease;
 	}
 	section#gifts div.twocolumn:first-child {
 		margin-bottom: 1.5em;
