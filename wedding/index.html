@@ -23,7 +23,7 @@
 					<a href="#mpls">Location</a>
 					<a href="#gifts">Gifts</a>
 					<a href="#rsvp">RSVP</a>
-					<a href="#contact">Find Us</a>
+					<a href="#contact">Contact</a>
 					<div>
 						<a href="#about">scroll</a>
 						<a href="#about">&darr;</a>
@@ -66,7 +66,7 @@
 			<div class="column" id="saturday">
 				<h2>Saturday, June 4</h2>
 				<div class="wrapper">
-					<div class="whitebox">
+					<div class="whitebox" id="reception">
 						<h3>Reception</h3>
 						<p>4 pm</p>
 						<p>Warehouse<br>
@@ -78,7 +78,7 @@
 					</div>
 				</div>
 				<div class="wrapper">
-					<div class="whitebox">
+					<div class="whitebox" id="afterparty">
 						<h3>After Party</h3>
 						<p>Midnight</p>
 						<p>First Avenue<br>
@@ -112,37 +112,9 @@
 	<section id="mpls" class="clearfix dash">
 		<h1 class="vast">Mpls</h1>
 		<div class="maxwidth">
-			<section id="food" class="clearfix">
-				<h2 class="cursive">Food</h2>
-				<h3>Craving something? Hover over images to see what we recommend for your desired cuisine.</h3>
-				<div class="column">
-					<img src="images/jucy_lucy.jpg">
-				</div>
-				<div class="column">
-					<img src="images/ice_cream.jpg">
-				</div>
-				<div class="column">
-					<img src="images/pizza.jpg">
-				</div>
-				<div class="column">
-					<img src="images/seafood.jpg">
-				</div>
-				<div class="column">
-					<img src="images/ramen.jpg">
-				</div>
-				<div class="column">
-					<img src="images/tacos.jpg">
-				</div>
-				<div class="column">
-					<img src="images/vietnamese.jpg">
-				</div>
-				<div class="column">
-					<img src="images/seward.jpg">
-				</div>
-			</section>	
 			<section id="lodging" class="clearfix">
 				<h2 class="cursive">Lodging</h2>
-				<h3>Now that you've eaten, here are our recommended places to let your food coma take over.</h3>
+				<!--<h3>Now that you've eaten, here are our recommended places to let your food coma take over.</h3>-->
 				<div class="column">
 					<div class="whitebox">
 						<div class="mobile">
@@ -185,8 +157,36 @@
 						<p>Our recommended hotels have parking ramps for your rentals.</p>
 						<a class="button" href="#">Compare Locations</a>
 						<p>Public Transpo is cheap, easy to use and highly accessible, too.</p>
-						<a class="button" href="https://www.metrotransit.org/" target="_blank" title="Metro Trasit website">Metro Transit</a>
+						<a class="button" href="https://www.metrotransit.org/" target="_blank" title="Metro Transit website">Metro Transit</a>
 					</div>
+				</div>
+			</section>
+			<section id="food" class="clearfix">
+				<h2 class="cursive">Food</h2>
+				<h3>Craving something? Hover over images to see what we recommend for your desired cuisine.</h3>
+				<div class="column">
+					<img src="images/jucy_lucy.jpg">
+				</div>
+				<div class="column">
+					<img src="images/ice_cream.jpg">
+				</div>
+				<div class="column">
+					<img src="images/pizza.jpg">
+				</div>
+				<div class="column">
+					<img src="images/seafood.jpg">
+				</div>
+				<div class="column">
+					<img src="images/ramen.jpg">
+				</div>
+				<div class="column">
+					<img src="images/tacos.jpg">
+				</div>
+				<div class="column">
+					<img src="images/vietnamese.jpg">
+				</div>
+				<div class="column">
+					<img src="images/seward.jpg">
 				</div>
 			</section>
 		</div>
@@ -214,20 +214,28 @@
 	</section>
 <!--RSVP-->	
 	<section id="rsvp" class="dash">
-		<h1 class="vast">RSVP</h1>
 		<div class="maxwidth">
-			<iframe src="https://docs.google.com/forms/d/12wyaZ9lPoe_MY7w7qTChHuBZKywspk3JKrcmmTLDW6A/viewform?embedded=true" width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			<iframe src="https://docs.google.com/forms/d/12wyaZ9lPoe_MY7w7qTChHuBZKywspk3JKrcmmTLDW6A/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 		</div>
 	</section>
 <!--FOOTER-->
-		<footer id="contact">
-			<h1 class="cursive">Simon + Khue</h1>
-			<h2>June 4, 2016 in <span class="cursive">Mpls</span></h2>
-			<h3 class="cursive">Address</h3>
-			<p>1901 Jackson St. NE #3<br>
-			Minneapolis, MN 55418</p>
-			<h3 class="cursive">Email</h3>
-			<p><a href="mailto:simonkhue@gmail.com" title="send an email">simonkhue@gmail.com</a></p>
+		<footer id="contact" class="clearfix">
+			<div class="maxwidth">
+				<div>
+					<h1 class="cursive">Simon + Khue</h1>
+					<h2>June 4, 2016 in <span class="cursive">Mpls</span></h2>
+				</div>
+				<div>
+					<h3 class="cursive">Address</h3>
+					<p>1901 Jackson St. NE #3<br>
+					Minneapolis, MN 55418</p>
+				</div>
+				<div>
+					<h3 class="cursive">Email</h3>
+					<p><a href="mailto:simonkhue@gmail.com" title="send an email">simonkhue@gmail.com</a></p>
+				</div>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45133.3060115798!2d-93.24876500000005!3d45.00804100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32d948f879d0b%3A0x29350ecdb30471b!2s1901+NE+Jackson+St%2C+Minneapolis%2C+MN+55418!5e0!3m2!1sen!2sus!4v1429823730775" width="100%" height="450" frameborder="0" style="border:0"></iframe>	
 		</footer>
 	</body>
 </html>	

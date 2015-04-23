@@ -102,7 +102,7 @@ a.pinkbutton:hover {
 header {
 	background: url(images/hippies.jpg) no-repeat center top;
 	background-size: cover;
-	height: 40em;
+	height: 300px;
 }
 
 header aside {
@@ -194,7 +194,7 @@ section#about hr+p {
 }
 
 section#schedule {
-	padding: 1em 0 2em;
+	padding: 0 0 2em;
 }
 
 section#schedule h1 {
@@ -216,8 +216,12 @@ section#schedule div#saturday div.wrapper {
 	width: 50%;
 }
 
-section#schedule div#saturday div div {
-	margin-right: 3em;
+section#schedule div#saturday div#reception {
+	margin-right: 1em;
+}
+
+section#schedule div#saturday div#afterparty {
+	margin-left: 1em;
 }
 
 section#schedule a.button {
@@ -225,7 +229,7 @@ section#schedule a.button {
 }
 
 section#mpls {
-	padding: 1em 0 2em;
+	padding: 0 0 2em;
 }
 
 section#mpls img {
@@ -243,16 +247,16 @@ section#mpls h3 {
 	padding: 0 1.5em;
 }
 
-section#mpls div section#food, section#lodging {
-	padding: 1.5em;
-}
-
 section#mpls section#lodging a.button {
 	width: 100%;
 }
 
+section#mpls section#food {
+	margin-top: 2em;
+}
+
 section#gifts {
-	padding: 1em 0 2em;
+	padding: 0 0 2em;
 }
 
 section#gifts h2 {
@@ -273,7 +277,7 @@ section#gifts div:first-child {
 }
 
 section#gifts div:last-child {
-	padding: 0 2.5em;
+	padding-left: 2.5em;
 }
 
 section#gifts div#left {
@@ -300,18 +304,17 @@ section#gifts div#left h3 span#to {
 }
 
 section#rsvp {
-	padding: 1em 0 2em;
+	padding: 2em 0;
 }
 
-section#rsvp div {
-	width: 80%;
-	margin: 2em auto;
+section#rsvp iframe {
+	overflow: hidden;
 }
 
 footer {
 	background: #424242;
 	color: #fff;
-	padding: 3em;
+	padding: 3em 0 0;
 	font-family: "Raleway", sans-serif;
 }
 
@@ -329,10 +332,20 @@ footer h3 {
 	margin-top: 1.5em;
 }
 
+footer div div {
+	float: left;
+	width: 33.33%;
+	margin: 0 auto 3em;
+	padding-left: 6em;
+}
+
 @media only screen and (max-width: 1440px) {
 	header {
-		height: 900px;
-	}		
+		height: 680px;
+	}
+	footer div div {
+		padding-left: 2.5em;
+	}	
  } 
 
 @media only screen and (max-width: 1030px) {
@@ -340,7 +353,7 @@ footer h3 {
 		font-size: 14px;
 	}
 	header {
-		height: 768px;
+		height: 548px;
 	}
 	.button {
 		margin-top: 1em;
@@ -353,11 +366,18 @@ footer h3 {
 	header,footer h2 {
 		font-size: 1em;
 	}
+	footer div div {
+		padding-left: 2em;
+	}
 }
 
 @media only screen and (max-width: 768px) {
 	body {
 		font-size: 12px;
+	}
+	header {
+		background: url(images/hippies.jpg) no-repeat right top;
+		background-size: cover;
 	}
 	.column {
 		width: 100%;
@@ -391,9 +411,17 @@ footer h3 {
 		margin: 2em auto;
 		padding: 1em;
 	}
+	footer div div {
+		padding-left: 1em;
+	}
 }
 
 @media only screen and (max-width: 480px) {
+	header {
+		background: url(images/hippies.jpg) no-repeat right top;
+		background-size: cover;
+		height: 202px;
+	}
 	section#gifts div:last-child {
 		padding: 0 1em;
 	}
@@ -406,27 +434,62 @@ footer h3 {
 		font-size: 2.6em;
 		transition: .3s, ease;
 	}
+	footer div div {
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		transition: .3s ease;
+	}
 }
 
 @media only screen and (max-width: 320px) {
+	header {
+		background: url(images/hippies.jpg) no-repeat right;
+		background-size: cover;
+		height: 352px;
+	}
 	section#about h1 {
 		font-size: 1.5em;
 	}
 	.vast {
-		font-size: 2em;
+		font-size: 2.75em;
 		margin-top: .5em;
+	}
+	section#mpls h2.cursive {
+		font-size: 2em;
 	}
 	.column {
 		width: 100%;
 		trasition: .3s ease;
 	}
-	.column h2 {
-		margin-bottom: 1em;
-		border-bottom: none;
-		padding-bottom: .5em;
+	.mobile {
+		float: none;
+		width: 100%;
 	}
-	section#schedule div:nth-child(3) h2 {
-		display: none;
+	a.pinkbutton {
+		width: 100%%;
+	}
+	section#schedule a.button {
+		width: 100%%;
+	}
+	section#schedule div#saturday div.wrapper {
+		float: none;
+		width: 100%;
+	}
+	section#schedule div#saturday div#reception {
+		margin-right: 0;
+		margin-bottom: 2em;
+	}
+	section#schedule div#saturday div#afterparty {
+		margin-left: 0;
+	}
+	section#mpls section#lodging a.button {
+		width: 100%%;
+	}
+	section#mpls section#food h3 {
+		visibility: hidden;
+		height: 0;
 	}
 	section#gifts div.twocolumn {
 		width: 100%;
