@@ -84,6 +84,11 @@ a.pinkbutton:hover {
 	text-transform: uppercase;
 }
 
+.overlay {
+	background: rgba(66,66,66,.5);
+	color: #fff;
+}
+
 .dash {
 	border-top: 2px dashed #424242;
 }
@@ -103,14 +108,30 @@ header {
 	background: url(images/hippies.jpg) no-repeat center top;
 	background-size: cover;
 	height: 300px;
+	margin-top: 6em;
 }
 
-header aside {
-	background: rgba(66,66,66,.5);
-	color: #fff;
+header>div {
 	width: 100%;
 	height: inherit;
-	padding: 3em;
+}
+
+header div#topbar {
+	position: fixed;
+	background: #424242;
+	top: 0;
+	right: 0;
+	left: 0;
+	max-height: 6em;
+	box-shadow: 0 10px 15px rgba(66,66,66,.5);
+}
+
+header div#logo {
+	padding: 1em 0 1em 3em;
+}
+
+header div#logo h1, h2 {
+	display: inline-block;
 }
 
 header h1 {
@@ -121,20 +142,50 @@ header h1 {
 header h2 {
 	font-size: 1.5em;
 	font-weight: 400;
+	margin-left: 1em;
 }
 
-header nav {
-	margin: 3em 0;
+input {
+  visibility: hidden;
+  position: absolute;
+  top:0;
+  right: -300px;
+  width: 50%;
 }
 
-header nav a {
-	display: block;
-	text-decoration: none;
-	text-transform: uppercase;
+nav {
+  	position: absolute;
+  	top: 1em;
+  	right: 0;
+	transition: max-height .25s ease;
+	margin: 0;
+	padding: 0;
+  }
+
+nav a {
+    transition: visibility .25s ease;
+    display: inline-block;
+    padding: .5em 1em;
+    margin: 0 .3em 0;
+    text-transform: uppercase;
 	color: #fff;
 	letter-spacing: .1em;
 	font-family: 'Raleway', sans-serif;
-}
+  }
+
+  nav a:last-child {
+  	margin-right: 2em;
+  }
+
+label {
+    display: none;
+    position: absolute;
+    font-size: 1.2em;
+    top: .3em;
+    right: .5em; 
+    z-index: 2;
+    font-size: 2.5em;
+  }
 
 header nav a+a {
 	margin-top: 1em;
@@ -146,7 +197,7 @@ header nav div a {
 }
 
 section#about {
-	background: #fff;
+	background: rgba(255,255,255,.5);
 }
 
 section#about>div {
@@ -201,10 +252,11 @@ section#schedule h1 {
 	margin-bottom: 1em;
 }
 
-section#schedule div.column h2 {
+section#schedule div div.column h2 {
 	margin-bottom: 1.2em;
 	border-bottom: 2px solid #424242;
 	padding-bottom: .5em;
+	width: 100%;
 }
 
 section#schedule div#saturday {
@@ -240,6 +292,7 @@ section#mpls img {
 section#mpls h2 {
 	font-size: 3em;
 	padding: 0 .65em;
+	width: 100%;
 }
 
 section#mpls h3 {
@@ -263,6 +316,7 @@ section#gifts h2 {
 	font-weight: 400;
 	text-align: center;
 	margin: 0 0 2.5em;
+	width: 100%;
 }
 
 section#gifts div.twocolumn {
@@ -371,13 +425,48 @@ footer div div {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
 	body {
 		font-size: 12px;
 	}
 	header {
 		background: url(images/hippies.jpg) no-repeat right top;
 		background-size: cover;
+	}
+	nav {
+      max-height: 0;
+      overflow: hidden;
+    }
+    nav a {
+      display: none;
+    }
+    nav a:hover {
+    	background: rgba(66,66,66,.5);
+    	color: #fff;
+    }
+    label {
+    	visibility: visible;
+      	display: block;
+    }
+	input {
+		visibility: visible;
+	    display: block;
+	    height: 40px;
+	    cursor: pointer;
+	    z-index: 3;
+	 }
+
+	input:checked + nav {
+	      max-height: 300px;
+	      background: rgba(66,66,66,.5);
+	      margin-top: 5em;
+	}
+	input:checked + nav a{
+	      visibility: visible;
+	      display: block;
+	      position: relative;
+	      padding: 1.2em;
+	      margin: 0;
 	}
 	.column {
 		width: 100%;

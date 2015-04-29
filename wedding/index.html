@@ -14,22 +14,23 @@
 
 	<body>
 		<header>
-			<aside>
-				<h1 class="cursive">Simon + Khue</h1>
-				<h2>June 4, 2016 in <span class="cursive">Mpls</span></h2>
-				<!--<input type="checkbox">-->
-				<nav>
-					<a href="#schedule">Schedule</a>
-					<a href="#mpls">Location</a>
-					<a href="#gifts">Gifts</a>
-					<a href="#rsvp">RSVP</a>
-					<a href="#contact">Contact</a>
-					<div>
-						<a href="#about">scroll</a>
-						<a href="#about">&darr;</a>
+			<div class="overlay">
+				<div id="topbar">
+					<div id="logo">
+						<h1 class="cursive">Simon + Khue</h1>
+						<h2>June 4, 2016 in <span class="cursive">Mpls</span></h2>
 					</div>
-				</nav>
-			</aside>
+					<input type="checkbox">
+					<nav>
+						<a href="#schedule">Schedule</a>
+						<a href="#mpls">Location</a>
+						<a href="#gifts">Gifts</a>
+						<a href="#rsvp">RSVP</a>
+						<a href="#contact">Contact</a>
+					</nav>
+					<label>&#9776;</label>
+				</div>
+			</div>
 		</header>
 <!--ABOUT-->
 	<section id="about">
@@ -58,8 +59,10 @@
 						Minneapolis, MN 55410<br></p>
 						<p>Attire: Swim Suit</p>
 					</div>
-					<a class="button" href="https://goo.gl/maps/3Nglo" target="_blank" title="Directions">Directions</a>
-					<a class="button pinkbutton" href="https://docs.google.com/forms/d/12wyaZ9lPoe_MY7w7qTChHuBZKywspk3JKrcmmTLDW6A/viewform" target="_blank" title="RSVP">RSVP</a>
+					<div>
+						<a class="button" href="https://goo.gl/maps/3Nglo" target="_blank" title="Directions">Directions</a>
+						<a class="button pinkbutton" href="https://docs.google.com/forms/d/12wyaZ9lPoe_MY7w7qTChHuBZKywspk3JKrcmmTLDW6A/viewform" target="_blank" title="RSVP">RSVP</a>
+					</div>
 				</div>
 			</div>
 <!--SATURDAY-->
@@ -116,7 +119,7 @@
 				<h2 class="cursive">Lodging</h2>
 				<!--<h3>Now that you've eaten, here are our recommended places to let your food coma take over.</h3>-->
 				<div class="column">
-					<div class="whitebox">
+					<div class="whitebox clearfix">
 						<div class="mobile">
 							<h4>Radisson Blu</h4>
 							<p>Connected to the Mall of America</p>
@@ -128,7 +131,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="whitebox">
+					<div class="whitebox clearfix">
 						<div class="mobile">
 							<h4>Courtyard Marriott</h4>
 							<p>Near UofM campus, Downtown and 35W</p>
@@ -140,7 +143,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="whitebox">
+					<div class="whitebox clearfix">
 						<div class="mobile">
 							<h4>Days Hotel</h4>
 							<p>On the UofM Campus and Light Rail</p>
