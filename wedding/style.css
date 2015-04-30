@@ -109,6 +109,7 @@ header {
 	background-size: cover;
 	height: 300px;
 	margin-top: 6em;
+	position: relative;
 }
 
 header>div {
@@ -145,25 +146,13 @@ header h2 {
 	margin-left: 1em;
 }
 
-input {
-  visibility: hidden;
-  position: absolute;
-  top:0;
-  right: -300px;
-  width: 50%;
+header nav {
+	position: absolute;
+	top: 1.3em;
+	right: 0;
 }
 
-nav {
-  	position: absolute;
-  	top: 1em;
-  	right: 0;
-	transition: max-height .25s ease;
-	margin: 0;
-	padding: 0;
-  }
-
 nav a {
-    transition: visibility .25s ease;
     display: inline-block;
     padding: .5em 1em;
     margin: 0 .3em 0;
@@ -171,28 +160,13 @@ nav a {
 	color: #fff;
 	letter-spacing: .1em;
 	font-family: 'Raleway', sans-serif;
-  }
+ }
 
-  nav a:last-child {
-  	margin-right: 2em;
-  }
-
-label {
-    display: none;
-    position: absolute;
-    font-size: 1.2em;
-    top: .3em;
-    right: .5em; 
-    z-index: 2;
-    font-size: 2.5em;
-  }
-
-header nav a+a {
-	margin-top: 1em;
+nav a:last-child {
+	margin-right: 2em;
 }
 
-header nav div a {
-	color: #CCB0B5;
+header nav a+a {
 	margin-top: 1em;
 }
 
@@ -393,6 +367,78 @@ footer div div {
 	padding-left: 6em;
 }
 
+/*********************
+	Hamburger Menu
+**********************/
+.mobile-nav {
+	background: #424242;
+	width: 33.33%;
+	position: absolute;
+	top: .3em;
+	right: 0;
+	padding: 1.5em 0 0;
+	box-shadow: 0 10px 15px rgba(66,66,66,.5);
+	display: none;
+}
+
+.menu-btn {
+	position: absolute;
+	right: 3em;
+}
+
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: 5em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+	background: #fff;
+}
+
+.menu-btn span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 6px 0;
+	background: #fff;
+	z-index: 99;
+	border-radius: 18%;
+}
+
+.menu-btn span:hover {
+	color: #B29DA1;
+}
+
+.responsive-menu {
+	margin-top: 4em;
+}
+
+.responsive-menu a {
+	display: block;
+    padding: 1em;
+    text-transform: uppercase;
+	color: #fff;
+	letter-spacing: .1em;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.responsive-menu a:hover {
+	color: #424242;
+	background: #fff;
+	font-weight: 800;
+}
+
+.expand {
+	display: block !important;
+	background: rgba(66,66,66,.6);
+}
+
 @media only screen and (max-width: 1440px) {
 	header {
 		height: 680px;
@@ -433,40 +479,11 @@ footer div div {
 		background: url(images/hippies.jpg) no-repeat right top;
 		background-size: cover;
 	}
-	nav {
-      max-height: 0;
-      overflow: hidden;
-    }
-    nav a {
-      display: none;
-    }
-    nav a:hover {
-    	background: rgba(66,66,66,.5);
-    	color: #fff;
-    }
-    label {
-    	visibility: visible;
-      	display: block;
-    }
-	input {
-		visibility: visible;
-	    display: block;
-	    height: 40px;
-	    cursor: pointer;
-	    z-index: 3;
-	 }
-
-	input:checked + nav {
-	      max-height: 300px;
-	      background: rgba(66,66,66,.5);
-	      margin-top: 5em;
+	header nav {
+		display: none;
 	}
-	input:checked + nav a{
-	      visibility: visible;
-	      display: block;
-	      position: relative;
-	      padding: 1.2em;
-	      margin: 0;
+	.movile-nav {
+		display: block;
 	}
 	.column {
 		width: 100%;
