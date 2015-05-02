@@ -303,11 +303,6 @@ section#mpls {
 	padding: 0 0 2em;
 }
 
-section#mpls img {
-	border-radius: 50%;
-	width: 100%;
-}
-
 section#mpls h2 {
 	font-size: 3em;
 	width: 100%;
@@ -330,8 +325,33 @@ section#mpls section#food {
 	margin-top: 2em;
 }
 
+section#mpls section#food h3 {
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
 section#mpls section#food .column-four {
-	width: 10%;
+	width: 25%;
+}
+
+section#mpls section#food .icon {
+	float: left;
+	width: 25%;
+	padding-right: 1em;
+}
+
+section#mpls section#food img {
+	width: 100%;
+}
+
+section#mpls section#food .links {
+	float:right;
+	width: 75%;
+}
+
+section#mpls section#food h4 a {
+	color: #424242;
+	font-size: .75em;
 }
 
 /******************
@@ -342,6 +362,11 @@ section#gifts {
 	padding: 0 0 2em;
 }
 
+section#gifts h3 {
+	font-size: 2em;
+	margin-top: 1em;
+}
+/*
 section#gifts div:first-child {
 	background: url(images/scotland.jpg) no-repeat center bottom;
 	background-size: cover;
@@ -374,14 +399,21 @@ section#gifts div#left h3 span#to {
 	font-weight: 400;
 	font-size: .6em;
 }
+*/
+/************
+	RSVP
+*************/
 
 section#rsvp {
-	padding: 2em 0;
+	background: #424242;
 }
 
 section#rsvp iframe {
-	overflow: hidden;
+	max-height: 1190px;
+	width: 100%;
+	margin: 0 auto;
 }
+
 /******************
  Footer
  ******************
@@ -544,6 +576,9 @@ footer div div {
 		section#schedule div#saturday div#afterparty {
 			margin-left: .5em;
 		}
+		section#mpls section#food .column-four {
+			padding-right: .5em;
+		}
 		footer div div {
 			padding-left: 2em;
 		}
@@ -632,10 +667,6 @@ footer div div {
 		section#schedule div#saturday {
 			width: 100%%;
 		}
-		section#mpls section#food p {
-			visibility: hidden;
-			height: 0;
-		}
 		section#mpls section#food .column-four {
 			width: 20%;
 		}
@@ -661,6 +692,9 @@ footer div div {
 		}
 		section#mpls .column-two {
 			padding: .25em;
+		}
+		section#rsvp iframe {
+			max-height: 1150px;
 		}
 }
 
@@ -793,6 +827,9 @@ footer div div {
 		section#gifts div.column-two:last-child {
 			padding: 0;
 		}
+		section#rsvp iframe {
+			height: 1130px;
+		}
 		footer div div {
 			float: none;
 			width: 100%;
@@ -804,6 +841,9 @@ footer div div {
 @media only screen and (max-width: 360px) {
 		header h2 {
 			visibility: hidden;
+		}
+		section#rsvp iframe {
+			height: 1150px;
 		}
 }
 
