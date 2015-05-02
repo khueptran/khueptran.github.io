@@ -3,6 +3,7 @@
 	<head>
 		<title>Simon and Khue</title>
 			<script src="https://ajax.googleapis.com/ajax/libs jquery/2.1.3/jquery.min.js"></script>
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 			<meta name="viewport" content="width=device-width, initialscale=1">
 			<link href='http://fonts.googleapis.com/css?family=Vast+Shadow' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
@@ -15,18 +16,16 @@
 
 	<body>
 		<header>
-			<div class="overlay">
+			<div>
 				<div id="topbar">
-					<div id="logo">
-						<h1 class="cursive">Simon + Khue</h1>
-						<h2>June 4, 2016 in <span class="cursive">Mpls</span></h2>
-					</div>
+					<h1 class="cursive" id="mobile-hdr"><a href="index.html">S+K</a></h1>
+					<h1 class="cursive"><a href="index.html">Simon + Khue</a></h1>
+					<h2>June 4, 2016 in <span class="cursive">Mpls</span></h2>
 					<nav>
 						<a href="#schedule">Schedule</a>
 						<a href="#mpls">Location</a>
 						<a href="#gifts">Gifts</a>
 						<a href="#rsvp">RSVP</a>
-						<a href="#contact">Contact</a>
 					</nav>
 					<div class="mobile-nav">
 					     <div class="menu-btn" id="menu-btn">
@@ -40,7 +39,6 @@
 							<a href="#mpls">Location</a>
 							<a href="#gifts">Gifts</a>
 							<a href="#rsvp">RSVP</a>
-							<a href="#contact">Contact</a>
 					     </div>
 					</div>
 				</div>
@@ -49,6 +47,7 @@
 <!--ABOUT-->
 	<section id="about">
 		<div class="clearfix maxwidth">
+		<i class="fa fa-angle-down"></i>
 			<h1><span class="one">We're Getting Married!</span><br/>
 			<span id="two" class="small">and</span><br/>
 			<span class="one cursive">You're Invited to<br/>
@@ -62,29 +61,29 @@
 		<h1 class="vast">Schedule</h1>
 		<div class="maxwidth">
 <!--FRIDAY-->
-			<div class="column">
+			<div class="column-four">
 				<h2>Friday, June 3</h2>
-				<div class="whitebox">
-					<div class="mobile">
-						<h3>Beach Day</h3>
+				<div class="whitebox clearfix">
+					<div class="mobile-col">
+						<h4>Beach</h4>
 						<p>2 pm</p>
 						<p>Thomas Beach<br>
 						3700 Thomas Ave. S<br>
 						Minneapolis, MN 55410<br></p>
 						<p>Attire: Swim Suit</p>
 					</div>
-					<div>
+					<div class="mobile-col mobile-button">
 						<a class="button" href="https://goo.gl/maps/3Nglo" target="_blank" title="Directions">Directions</a>
 						<a class="button pinkbutton" href="https://docs.google.com/forms/d/12wyaZ9lPoe_MY7w7qTChHuBZKywspk3JKrcmmTLDW6A/viewform" target="_blank" title="RSVP">RSVP</a>
 					</div>
 				</div>
 			</div>
 <!--SATURDAY-->
-			<div class="column" id="saturday">
+			<div class="column-four" id="saturday">
 				<h2>Saturday, June 4</h2>
 				<div class="wrapper">
 					<div class="whitebox" id="reception">
-						<h3>Reception</h3>
+						<h4>Reception</h4>
 						<p>4 pm</p>
 						<p>Warehouse<br>
 						1 2nd St. S<br>
@@ -96,8 +95,8 @@
 				</div>
 				<div class="wrapper">
 					<div class="whitebox" id="afterparty">
-						<h3>After Party</h3>
-						<p>Midnight</p>
+						<h4>After Party</h4>
+						<p>11 pm</p>
 						<p>First Avenue<br>
 						701 First Ave. N<br>
 						Minneapolis, MN 55403<br></p>
@@ -108,19 +107,21 @@
 				</div>
 			</div>
 <!--SUNDAY-->
-			<div class="column">
+			<div class="column-four">
 				<h2>Sunday, June 5</h2>
-				<div class="whitebox">
-					<div class="mobile">
-						<h3>BBQ + Pool Party</h3>
+				<div class="whitebox clearfix">
+					<div class="mobile-col">
+						<h4>BBQ + Pool</h4>
 						<p>Noon</p>
 						<p>Tran Residence<br>
 						1417 W 102nd St.<br>
 						Bloomington, MN 55431<br></p>
 						<p>Attire: Casual</p>
 					</div>
-					<a class="button" href="https://goo.gl/maps/3Nglo" target="_blank" title="Directions">Directions</a>
-					<a class="button pinkbutton" href="https://docs.google.com/forms/d/12wyaZ9lPoe_MY7w7qTChHuBZKywspk3JKrcmmTLDW6A/viewform" target="_blank" title="RSVP">RSVP</a>
+					<div class="mobile-col mobile-button">
+						<a class="button" href="https://goo.gl/maps/3Nglo" target="_blank" title="Directions">Directions</a>
+						<a class="button pinkbutton" href="https://docs.google.com/forms/d/12wyaZ9lPoe_MY7w7qTChHuBZKywspk3JKrcmmTLDW6A/viewform" target="_blank" title="RSVP">RSVP</a>
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -130,79 +131,90 @@
 		<h1 class="vast">Mpls</h1>
 		<div class="maxwidth">
 			<section id="lodging" class="clearfix">
-				<h2 class="cursive">Lodging</h2>
-				<!--<h3>Now that you've eaten, here are our recommended places to let your food coma take over.</h3>-->
-				<div class="column">
+				<h2 class="cursive">Where to Stay</h2>
+				<div class="column-two">
 					<div class="whitebox clearfix">
-						<div class="mobile">
+						<div class="mobile-col">
 							<h4>Radisson Blu</h4>
 							<p>Connected to the Mall of America</p>
 							<p>2100 Killebrew Drive<br/>
 							Bloomington, MN 55425<br></p>
+						</div>
+						<div class="mobile-col mobile-button">
+							<a class="button" href="https://goo.gl/maps/ED1yE" target="_blank" title="Directions">Directions</a>
+							<a class="button pinkbutton" href="http://www.radissonblu.com/hotel-mall-of-america" target="_blank" title="hotel website">Website</a>
 						</div>	
-						<a class="button" href="https://goo.gl/maps/ED1yE" target="_blank" title="Directions">Directions</a>
-						<a class="button pinkbutton" href="http://www.radissonblu.com/hotel-mall-of-america" target="_blank" title="hotel website">Website</a>
 					</div>
 				</div>
-				<div class="column">
+				<div class="column-two">
 					<div class="whitebox clearfix">
-						<div class="mobile">
+						<div class="mobile-col">
 							<h4>Courtyard Marriott</h4>
 							<p>Near UofM campus, Downtown and 35W</p>
 							<p>1500 Washington Ave. S<br>
 							Minneapolis, MN 55454<br></p>
+						</div>
+						<div class="mobile-col mobile-button">
+							<a class="button" href="https://goo.gl/maps/umlfp" target="_blank" title="Directions">Directions</a>
+							<a class="button pinkbutton" href="http://www.marriott.com/hotels/travel/mspdc-courtyard-minneapolis-downtown/" target="_blank" title="hotel website">Website</a>
 						</div>	
-						<a class="button" href="https://goo.gl/maps/umlfp" target="_blank" title="Directions">Directions</a>
-						<a class="button pinkbutton" href="http://www.marriott.com/hotels/travel/mspdc-courtyard-minneapolis-downtown/" target="_blank" title="hotel website">Website</a>
 					</div>
 				</div>
-				<div class="column">
+				<div class="column-two">
 					<div class="whitebox clearfix">
-						<div class="mobile">
+						<div class="mobile-col">
 							<h4>Days Hotel</h4>
 							<p>On the UofM Campus and Light Rail</p>
 							<p>2407 University Ave. SE<br>
 							Minneapolis, MN 55414<br></p>
 						</div>
-						<a class="button" href="https://goo.gl/maps/0C5rp" target="_blank" title="Directions">Directions</a>
-						<a class="button pinkbutton" href="http://www.daysinn.com/hotels/minnesota/minneapolis/days-inn-hotel-university-ave-se/hotel-overview?cid=local">Website</a>
+						<div class="mobile-col mobile-button">
+							<a class="button" href="https://goo.gl/maps/0C5rp" target="_blank" title="Directions">Directions</a>
+							<a class="button pinkbutton" href="http://www.daysinn.com/hotels/minnesota/minneapolis/days-inn-hotel-university-ave-se/hotel-overview?cid=local">Website</a>
+						</div>	
 					</div>
 				</div>
-				<div class="column">
-					<div>
-						<h4>Getting Around</h4>
-						<p>Our recommended hotels have parking ramps for your rentals.</p>
-						<a class="button" href="#">Compare Locations</a>
-						<p>Public Transpo is cheap, easy to use and highly accessible, too.</p>
-						<a class="button" href="https://www.metrotransit.org/" target="_blank" title="Metro Transit website">Metro Transit</a>
-					</div>
+				<div class="column-two" id="gettingaround">
+					<div class="blackbox clearfix">
+						<div class="mobile-col">
+							<h4>Parking</h4>
+							<p>Our recommended hotels have parking ramps for your rentals.</p>
+							<a class="button pinkbutton" href="#">Compare Locations</a>
+						</div>
+						<div class="mobile-col">
+							<h4>Getting Around</h4>
+							<p>Public Transpo is cheap, easy to use and highly accessible, too.</p>
+							<a class="button pinkbutton" href="https://www.metrotransit.org/" target="_blank" title="Metro Transit website">Metro Transit</a>
+						</div>
+					</div>	
 				</div>
 			</section>
 			<section id="food" class="clearfix">
-				<h2 class="cursive">Food</h2>
-				<h3>Craving something? Hover over images to see what we recommend for your desired cuisine.</h3>
-				<div class="column">
+				<h2 class="cursive">What to do</h2>
+					<h3>Eat.</h3>
+					<p>Hover over images to see what we recommend for your desired cuisine.</p>
+				<div class="column-four">
 					<img src="images/jucy_lucy.jpg">
 				</div>
-				<div class="column">
+				<div class="column-four">
 					<img src="images/ice_cream.jpg">
 				</div>
-				<div class="column">
+				<div class="column-four">
 					<img src="images/pizza.jpg">
 				</div>
-				<div class="column">
+				<div class="column-four">
 					<img src="images/seafood.jpg">
 				</div>
-				<div class="column">
+				<div class="column-four">
 					<img src="images/ramen.jpg">
 				</div>
-				<div class="column">
+				<div class="column-four">
 					<img src="images/tacos.jpg">
 				</div>
-				<div class="column">
+				<div class="column-four">
 					<img src="images/vietnamese.jpg">
 				</div>
-				<div class="column">
+				<div class="column-four">
 					<img src="images/seward.jpg">
 				</div>
 			</section>
@@ -211,14 +223,13 @@
 <!--GIFTS-->	
 	<section id="gifts" class="dash">
 		<h1 class="vast">Gifts</h1>
-		<h2>Contribute to Our Honeymoon</h2>
 		<div class="maxwidth clearfix">
-			<div class="twocolumn">
+			<div class="column-two">
 				<div id="left">
 					<h3><span class="cursive">An Adventure</span><br><span id="to">to</span><br><span id="scotland">Scotland</span></h3>
 				</div>
 			</div>
-			<div class="twocolumn">
+			<div class="column-two">
 				<h4>How can you contribute?</h4>
 				<p>By writing a check and bringing it along to the celebrations, or by mailing it to us:</p>
 				<p>Simon + Khue<br/>
@@ -237,7 +248,7 @@
 	</section>
 <!--FOOTER-->
 		<footer id="contact" class="clearfix">
-			<div class="maxwidth">
+		<!--<div class="maxwidth">
 				<div>
 					<h1 class="cursive">Simon + Khue</h1>
 					<h2>June 4, 2016 in <span class="cursive">Mpls</span></h2>
@@ -251,7 +262,7 @@
 					<h3 class="cursive">Email</h3>
 					<p><a href="mailto:simonkhue@gmail.com" title="send an email">simonkhue@gmail.com</a></p>
 				</div>
-			</div>
+			</div>-->
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45133.3060115798!2d-93.24876500000005!3d45.00804100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32d948f879d0b%3A0x29350ecdb30471b!2s1901+NE+Jackson+St%2C+Minneapolis%2C+MN+55418!5e0!3m2!1sen!2sus!4v1429823730775" width="100%" height="450" frameborder="0" style="border:0"></iframe>	
 		</footer>
 		<script type="text/javascript">

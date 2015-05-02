@@ -11,11 +11,25 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 }
 
+h4 {
+	font-size: 1.64em;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 2.69em;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 800;
+}
+
 p+p {
 	margin-top: 1.2em;
 }
 
-a+p {
+a+p,a+h1,a+h2,a+h3,a+h4 {
 	margin-top: 1.2em;
 }
 
@@ -93,9 +107,15 @@ a.pinkbutton:hover {
 	border-top: 2px dashed #424242;
 }
 
-.column {
+.column-four {
 	float: left;
 	width: 25%;
+	padding: 1em;
+}
+
+.column-two {
+	float: left;
+	width: 50%;
 	padding: 1em;
 }
 
@@ -104,12 +124,21 @@ a.pinkbutton:hover {
 	padding: 2.5em;
 }
 
+.blackbox {
+	background: #424242;
+	color: #fff;
+	padding: 2.5em;
+}
+/******************
+	Header
+*******************/	
+
+
 header {
-	background: url(images/hippies.jpg) no-repeat center top;
+	background: url(images/hippies.jpg) fixed no-repeat center top;
 	background-size: cover;
 	height: 300px;
-	margin-top: 6em;
-	position: relative;
+	top: 6em;
 }
 
 header>div {
@@ -119,20 +148,24 @@ header>div {
 
 header div#topbar {
 	position: fixed;
-	background: #424242;
+	background: rgba(66,66,66,.9);
 	top: 0;
 	right: 0;
 	left: 0;
 	max-height: 6em;
-	box-shadow: 0 10px 15px rgba(66,66,66,.5);
+	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+	color: #fff;
+	padding: 1em;
 }
 
-header div#logo {
-	padding: 1em 0 1em 3em;
-}
-
-header div#logo h1, h2 {
+header h1, h2 {
 	display: inline-block;
+}
+
+header h1#mobile-hdr {
+	visibility: hidden;
+	width: 0;
+	height: 0;
 }
 
 header h1 {
@@ -144,6 +177,10 @@ header h2 {
 	font-size: 1.5em;
 	font-weight: 400;
 	margin-left: 1em;
+}
+
+header h1 a:hover{
+	color: #CCB0B5;
 }
 
 header nav {
@@ -162,20 +199,20 @@ nav a {
 	font-family: 'Raleway', sans-serif;
  }
 
-nav a:last-child {
-	margin-right: 2em;
-}
-
 header nav a+a {
 	margin-top: 1em;
 }
+
+/*****************
+	About
+******************/	
 
 section#about {
 	background: rgba(255,255,255,.5);
 }
 
 section#about>div {
-	padding: 3em;
+	padding:  2em;
 }
 
 section#about h1 {
@@ -218,6 +255,10 @@ section#about hr+p {
 	font-family: 'Raleway', sans-serif;
 }
 
+/*****************
+	Schedule
+******************/
+
 section#schedule {
 	padding: 0 0 2em;
 }
@@ -226,7 +267,7 @@ section#schedule h1 {
 	margin-bottom: 1em;
 }
 
-section#schedule div div.column h2 {
+section#schedule div div.column-four h2 {
 	margin-bottom: 1.2em;
 	border-bottom: 2px solid #424242;
 	padding-bottom: .5em;
@@ -254,6 +295,10 @@ section#schedule a.button {
 	width: 100%;
 }
 
+/*******************
+	Loctation 
+********************/
+
 section#mpls {
 	padding: 0 0 2em;
 }
@@ -265,37 +310,36 @@ section#mpls img {
 
 section#mpls h2 {
 	font-size: 3em;
-	padding: 0 .65em;
 	width: 100%;
 }
 
 section#mpls h3 {
-	font-weight: 400;
-	padding: 0 1.5em;
+	font-size: 2em;
+	text-transform: lowercase;
 }
 
 section#mpls section#lodging a.button {
 	width: 100%;
 }
 
+section#mpls #gettingaround .mobile-col:last-child {
+	margin-top: 1.2em;
+}
+
 section#mpls section#food {
 	margin-top: 2em;
 }
 
+section#mpls section#food .column-four {
+	width: 10%;
+}
+
+/******************
+	Gifts
+*******************/
+
 section#gifts {
 	padding: 0 0 2em;
-}
-
-section#gifts h2 {
-	font-weight: 400;
-	text-align: center;
-	margin: 0 0 2.5em;
-	width: 100%;
-}
-
-section#gifts div.twocolumn {
-	float: left;
-	width: 50%;
 }
 
 section#gifts div:first-child {
@@ -338,6 +382,9 @@ section#rsvp {
 section#rsvp iframe {
 	overflow: hidden;
 }
+/******************
+ Footer
+ ******************
 
 footer {
 	background: #424242;
@@ -365,19 +412,17 @@ footer div div {
 	width: 33.33%;
 	margin: 0 auto 3em;
 	padding-left: 6em;
-}
+}/
 
 /*********************
 	Hamburger Menu
 **********************/
 .mobile-nav {
-	background: #424242;
 	width: 33.33%;
 	position: absolute;
 	top: .3em;
 	right: 0;
 	padding: 1.5em 0 0;
-	box-shadow: 0 10px 15px rgba(66,66,66,.5);
 	display: none;
 }
 
@@ -415,17 +460,22 @@ footer div div {
 }
 
 .responsive-menu {
-	margin-top: 4em;
+	margin-top: 4.2em;
 }
 
 .responsive-menu a {
 	display: block;
-    padding: 1em;
+	background: rgba(66,66,66,.9);
+    padding: 1em 0;
     text-transform: uppercase;
 	color: #fff;
 	letter-spacing: .1em;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+}
+
+.responsive-menu a:last-child {
+	box-shadow: 0 10px 15px rgba(0,0,0,.5);
 }
 
 .responsive-menu a:hover {
@@ -439,172 +489,328 @@ footer div div {
 	background: rgba(66,66,66,.6);
 }
 
+/*********************
+	Media Queries
+**********************/
+
 @media only screen and (max-width: 1440px) {
-	header {
-		height: 680px;
-	}
-	footer div div {
-		padding-left: 2.5em;
-	}	
+		body {
+			transition: all .3s ease;
+		}
+		header {
+			height: 680px;
+		}
+		footer div div {
+			padding-left: 2.5em;
+		}	
  } 
 
-@media only screen and (max-width: 1030px) {
-	body {
-		font-size: 14px;
-	}
-	header {
-		height: 548px;
-	}
-	.button {
-		margin-top: 1em;
-		letter-spacing: 0;
-		font-size: .75em;
-	}
-	header,footer h1 {
-		font-size: 2em;
-	}
-	header,footer h2 {
-		font-size: 1em;
-	}
-	footer div div {
-		padding-left: 2em;
-	}
+@media only screen and (max-width: 1152px) {
+		h2 {
+			font-size: 1.5em;
+		}
+		.mobile-nav {
+			display: block;
+		}
+		.responsive-menu {
+			display: none;
+		}
+		.button {
+			margin-top: 1em;
+			letter-spacing: 0;
+			font-size: .75em;
+		}
+		header,footer h1 {
+			font-size: 2em;
+		}
+		header,footer h2 {
+			font-size: 1em;
+		}
+		header {
+			height: 548px;
+		}
+		header nav {
+			display: none;
+		}
+		section#schedule .whitebox {
+			padding: 1.5em;
+		}
+		section#schedule .column-four {
+			padding: .5em;
+		}
+		section#schedule div#saturday div#reception {
+			margin-right: .5em;
+		}
+		section#schedule div#saturday div#afterparty {
+			margin-left: .5em;
+		}
+		footer div div {
+			padding-left: 2em;
+		}
+}
+
+@media only screen and (max-width: 1006px) {
+		section#schedule .whitebox {
+			padding: 1.75em;
+		}
+		section#schedule .blackbox {
+			padding: 1.75em;
+		}
+		section#schedule .column-four {
+			padding: .5em;
+		}
+		section#schedule .column-two {
+			padding: .5em;
+		}
+		section#schedule div#saturday div#reception {
+			margin-right: .5em;
+		}
+
+		section#schedule div#saturday div#afterparty {
+			margin-left: .5em;
+		}
+}
+
+@media only screen and (max-width: 930px) {
+		section#schedule .whitebox {
+			padding: 1.25em;
+		}
+		section#schedule .blackbox {
+			padding: 1.25em;
+		}
+		section#schedule .column-four {
+			padding: .25em;
+		}
+		section#schedule .column-two {
+			padding: .25em;
+		}
+		section#schedule div#saturday div#reception {
+			margin-right: .25em;
+		}
+
+		section#schedule div#saturday div#afterparty {
+			margin-left: .25em;
+		}
 }
 
 @media only screen and (max-width: 850px) {
-	body {
-		font-size: 12px;
-	}
-	header {
-		background: url(images/hippies.jpg) no-repeat right top;
-		background-size: cover;
-	}
-	header nav {
-		display: none;
-	}
-	.movile-nav {
-		display: block;
-	}
-	.column {
-		width: 100%;
-		transition: .3s ease;
-	}
-	.mobile {
-		float: left;
-		width: 50%;
-	}
-	a.pinkbutton {
-		width: 25%%;
-	}
-	section#schedule a.button {
-		width: 50%%;
-	}
-	section#schedule div#saturday {
-		width: 100%%;
-	}
-	section#schedule div#saturday a.button {
-		width:100%;
-	}
-	section#mpls section#lodging a.button {
-		width: 50%%;
-	}
-	section#mpls #food .column {
-		width: 50%;
-		transition: .3s ease;
-	}
-	section#rsvp div {
-		width: 100%;
-		margin: 2em auto;
-		padding: 1em;
-	}
-	footer div div {
-		padding-left: 1em;
-	}
+		a.button {
+			width: 100%%;
+		}
+		.column-four {
+			width: 100%;
+			padding: 1em;
+		}
+		.column-two {
+			padding: 1em;
+		}
+		.whitebox {
+			padding: 2.5em;
+		}
+		.blackbox {
+			padding: 2.5em;
+		}header {
+			background: url(images/hippies.jpg) no-repeat right top;
+			background-size: cover;
+		}
+		section#about h1 {
+			font-size: 2.5em;
+		}
+		section#schedule div#saturday div#reception {
+			margin-right: 1em;
+		}
+		section#schedule div#saturday div#afterparty {
+			margin-left: 1em;
+		}
+		section#schedule .mobile-col {
+			float: left;
+			width: 50%;
+		}
+		section#schedule .mobile-button {
+			padding-left: 3.5em;
+		}
+		section#schedule div#saturday {
+			width: 100%%;
+		}
+		section#mpls section#food p {
+			visibility: hidden;
+			height: 0;
+		}
+		section#mpls section#food .column-four {
+			width: 20%;
+		}
+		section#rsvp div {
+			width: 100%;
+			margin: 2em auto;
+			padding: 1em;
+		}
+		footer div div {
+			padding-left: 1em;
+		}
+}
+
+@media only screen and (max-width: 776px) {
+		section#mpls .whitebox {
+			padding: 1.25em;
+		}
+		section#mpls .blackbox {
+			padding: 1.25em;
+		}
+		section#mpls .column-four {
+			padding: .25em;
+		}
+		section#mpls .column-two {
+			padding: .25em;
+		}
+}
+
+@media only screen and (max-width: 630px) {
+		header h1 {
+			visibility: hidden;
+			display: none;
+			width: 0;
+		}
+		header h1#mobile-hdr {
+			visibility: visible;
+			display: inline;
+			width: initial;
+		}
+}		
+
+@media only screen and (max-width: 550px) {
+		.whitebox {
+			padding: 1.75em;
+		}
+		.blackbox {
+			padding: 1.75em;
+		}
+		.vast {
+			font-size: 3em;
+			margin-top: .5em;
+		}
+		section#about h1 {
+			font-size: 2em;
+		}
+		section#schedule .column-four, section#mpls .column-two {
+			width: 100%;
+			padding: 1em;
+		}
+		section#schedule div#saturday div#reception {
+			margin-right: .5em;
+		}
+		section#schedule div#saturday div#afterparty {
+			margin-left: .5em;
+		}
+		section#mpls h2.cursive {
+			font-size: 2em;
+		}
+		section#mpls h3 {
+			font-size: 1.5em;
+		}
+		section#mpls .mobile-col {
+			float: left;
+			width: 50%;
+		}
+		section#mpls .mobile-button {
+			padding-left: 3.5em;
+		}
+		section#mpls #gettingaround .mobile-col:first-child {
+			padding-right: .5em;
+		}
+		section#mpls #gettingaround .mobile-col:last-child {
+			padding-left: .5em;
+			margin-top: 0;
+		}
 }
 
 @media only screen and (max-width: 480px) {
-	header {
-		background: url(images/hippies.jpg) no-repeat right top;
-		background-size: cover;
-		height: 202px;
-	}
-	section#gifts div:last-child {
-		padding: 0 1em;
-	}
+		body {
+			font-size: 12px;
+		}
+		a.button {
+			width: 100%%;
+		}
+		a.pinkbutton {
+			width: 100%%;
+		}
+		header {
+			background: url(images/hippies.jpg) no-repeat right top;
+			background-size: cover;
+			height: 202px;
+		}
+		section#about h1 {
+			font-size: 1.85em;
+		}
+		section#schedule div#saturday div.wrapper {
+			float: none;
+			width: 100%;
+		}
+		section#schedule div#saturday div#reception {
+			margin-right: 0;
+			margin-bottom: 2em;
+		}
+		section#schedule div#saturday div#afterparty {
+			margin-left: 0;
+		}
+		section#schedule .whitebox, section#mpls .whitebox, section#mpls .blackbox {
+			padding: 2em;
+		}
+		section#schedule .mobile-col, section#mpls .mobile-col {
+			float: none;
+			width: 100%;
+		}
+		section#schedule .mobile-button, section#mpls .mobile-button {
+			padding: 0;
+		}
+		section#mpls section#food .column-four {
+			width: 50%;
+		}
+		section#mpls section#lodging a.button {
+			width: 100%%;
+		}
+		section#mpls #gettingaround .mobile-col:first-child {
+			padding: 0;
+		}
+		section#mpls #gettingaround .mobile-col:last-child {
+			padding: 0;
+			margin-top: 1em;
+		}
+		section#gifts div:last-child {
+			padding: 0 1em;
+		}
+		section#gifts div#left {
+			padding: 1.5em;
+		}
+		section#gifts div#left h3 {
+			font-size: 2.6em;
+		}
+		section#gifts div.column-two {
+			width: 100%;
+		}
+		section#gifts div.column-two:first-child {
+			margin-bottom: 1.5em;
+		}
+		section#gifts div.column-two:last-child {
+			padding: 0;
+		}
+		footer div div {
+			float: none;
+			width: 100%;
+			padding: 0;
+			text-align: center;
+		}
+}
 
-	section#gifts div#left {
-		padding: 1.5em;
-	}
-
-	section#gifts div#left h3 {
-		font-size: 2.6em;
-		transition: .3s, ease;
-	}
-	footer div div {
-		float: none;
-		width: 100%;
-		padding: 0;
-		text-align: center;
-		transition: .3s ease;
-	}
+@media only screen and (max-width: 360px) {
+		header h2 {
+			visibility: hidden;
+		}
 }
 
 @media only screen and (max-width: 320px) {
-	header {
-		background: url(images/hippies.jpg) no-repeat right;
-		background-size: cover;
-		height: 352px;
-	}
-	section#about h1 {
-		font-size: 1.5em;
-	}
-	.vast {
-		font-size: 2.75em;
-		margin-top: .5em;
-	}
-	section#mpls h2.cursive {
-		font-size: 2em;
-	}
-	.column {
-		width: 100%;
-		trasition: .3s ease;
-	}
-	.mobile {
-		float: none;
-		width: 100%;
-	}
-	a.pinkbutton {
-		width: 100%%;
-	}
-	section#schedule a.button {
-		width: 100%%;
-	}
-	section#schedule div#saturday div.wrapper {
-		float: none;
-		width: 100%;
-	}
-	section#schedule div#saturday div#reception {
-		margin-right: 0;
-		margin-bottom: 2em;
-	}
-	section#schedule div#saturday div#afterparty {
-		margin-left: 0;
-	}
-	section#mpls section#lodging a.button {
-		width: 100%%;
-	}
-	section#mpls section#food h3 {
-		visibility: hidden;
-		height: 0;
-	}
-	section#gifts div.twocolumn {
-		width: 100%;
-		transition: .3s ease;
-	}
-	section#gifts div.twocolumn:first-child {
-		margin-bottom: 1.5em;
-	}
-	section#gifts div.twocolumn:last-child {
-		padding: 0;
-	}
+		header {
+			background: url(images/hippies.jpg) no-repeat right;
+			background-size: cover;
+			height: 352px;
+		}
 }
