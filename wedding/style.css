@@ -330,6 +330,10 @@ section#mpls section#food h3 {
 	margin-bottom: 1em;
 }
 
+section#mpls .row {
+	width: 100%;
+}
+
 section#mpls section#food .column-four {
 	width: 25%;
 }
@@ -576,9 +580,6 @@ footer div div {
 		section#schedule div#saturday div#afterparty {
 			margin-left: .5em;
 		}
-		section#mpls section#food .column-four {
-			padding-right: .5em;
-		}
 		footer div div {
 			padding-left: 2em;
 		}
@@ -626,6 +627,12 @@ footer div div {
 		section#schedule div#saturday div#afterparty {
 			margin-left: .25em;
 		}
+		section#mpls section#food .icon {
+			width: 30%;
+		}
+		section#mpls section#food .links {
+			width: 70%;
+		}
 }
 
 @media only screen and (max-width: 850px) {
@@ -668,7 +675,13 @@ footer div div {
 			width: 100%%;
 		}
 		section#mpls section#food .column-four {
-			width: 20%;
+			width: 50%;
+		}
+		section#mpls section#food .icon {
+			width: 25%;
+		}
+		section#mpls section#food .links {
+			width: 75%;
 		}
 		section#rsvp div {
 			width: 100%;
@@ -699,6 +712,9 @@ footer div div {
 }
 
 @media only screen and (max-width: 630px) {
+		body {
+			font-size: 14px;
+		}
 		header h1 {
 			visibility: hidden;
 			display: none;
@@ -755,6 +771,9 @@ footer div div {
 			padding-left: .5em;
 			margin-top: 0;
 		}
+		section#mpls section#food .column-four {
+			height: 7em;
+		}
 }
 
 @media only screen and (max-width: 480px) {
@@ -809,6 +828,17 @@ footer div div {
 			padding: 0;
 			margin-top: 1em;
 		}
+		section#mpls section#food .column-four {
+			width: 100%;
+			height: initial;
+			margin-bottom: 1em;
+		}
+		section#mpls section#food .icon {
+			width: 15%;
+		}
+		section#mpls section#food .links {
+			width: 85%;
+		}
 		section#gifts div:last-child {
 			padding: 0 1em;
 		}
@@ -841,6 +871,12 @@ footer div div {
 @media only screen and (max-width: 360px) {
 		header h2 {
 			visibility: hidden;
+		}
+		section#mpls section#food .icon {
+			width: 20%;
+		}
+		section#mpls section#food .links {
+			width: 80%;
 		}
 		section#rsvp iframe {
 			height: 1150px;
