@@ -130,66 +130,54 @@ a.pinkbutton:hover {
 	padding: 2.5em;
 }
 /******************
-	Header
+	Top Nav
 *******************/	
 
-
-header {
-	background: url(images/hippies.jpg) fixed no-repeat center top;
-	background-size: cover;
-	height: 300px;
-	top: 6em;
-}
-
-header>div {
-	width: 100%;
-	height: inherit;
-}
-
-header div#topbar {
+div#topbar {
 	position: fixed;
-	background: rgba(66,66,66,.9);
+	background: rgba(66,66,66,.8);
 	top: 0;
 	right: 0;
 	left: 0;
+	color: #fff;
 	max-height: 6em;
 	box-shadow: 0 10px 15px rgba(0,0,0,.5);
-	color: #fff;
 	padding: 1em;
+	z-index: 99;
 }
 
-header h1, h2 {
+div#topbar h1, h2 {
 	display: inline-block;
 }
 
-header h1#mobile-hdr {
+div#topbar h1#mobile-hdr {
 	visibility: hidden;
 	width: 0;
 	height: 0;
 }
 
-header h1 {
+div#topbar h1 {
 	font-size: 3em;
 	color: #CCB0B5;
 }
 
-header h2 {
+div#topbar h2 {
 	font-size: 1.5em;
 	font-weight: 400;
 	margin-left: 1em;
 }
 
-header h1 a:hover{
+div#topbar h1 a:hover{
 	color: #CCB0B5;
 }
 
-header nav {
+div#topbar nav {
 	position: absolute;
 	top: 1.3em;
 	right: 0;
 }
 
-nav a {
+div#topbar nav a {
     display: inline-block;
     padding: .5em 1em;
     margin: 0 .3em 0;
@@ -199,57 +187,75 @@ nav a {
 	font-family: 'Raleway', sans-serif;
  }
 
-header nav a+a {
+ div#topbar nav a:hover {
+ 	font-weight: 800;
+ }
+
+div#topbar nav a+a {
 	margin-top: 1em;
 }
 
 /*****************
-	About
+	Header
 ******************/	
 
-section#about {
+header#about {
+	height: 825px;
+	background: url(images/hippies.jpg) no-repeat center top;
+	background-size: cover;
+	padding: 0;
+	margin: 6em 0 0;
+}
+
+header#about div.overlay-white {
 	background: rgba(255,255,255,.5);
+	height: inherit;
+	position: relative;
 }
 
-section#about>div {
+header#about div div {
 	padding:  2em;
+	position: absolute;
+	bottom: 8em;
+	left: 0;
+	right: 0;
 }
 
-section#about h1 {
+header#about h1 {
 	text-align: center;
 	font-size: 3em;
 }
 
-section#about h1 span.small {
+header#about h1 span.small {
 	font-size: .6em;
 }
 
-section#about h1 span#two {
+header#about h1 span#two {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: .1em;
 }
 
-section#about h1 span#two:before {
+header#about h1 span#two:before {
 	content:"\2013";
 }
 
-section#about h1 span#two:after {
+header#about h1 span#two:after {
 	content:"\2013";
 }
 
-section#about h1 span#three {
+header#about h1 span#three {
 	font-weight: 400;
 	font-size: .8em;
 }
 
-section#about hr {
+header#about hr {
 	max-width: 380px;
 	margin: 0 auto;
 }
 
-section#about hr+p {
+header#about hr+p {
 	margin-top: 1.5em;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -533,7 +539,7 @@ footer div div {
 		body {
 			transition: all .3s ease;
 		}
-		header {
+		header#about {
 			height: 680px;
 		}
 		footer div div {
@@ -556,16 +562,13 @@ footer div div {
 			letter-spacing: 0;
 			font-size: .75em;
 		}
-		header,footer h1 {
+		div#topbar,footer h1 {
 			font-size: 2em;
 		}
-		header,footer h2 {
+		div#topbar,footer h2 {
 			font-size: 1em;
 		}
-		header {
-			height: 548px;
-		}
-		header nav {
+		div#topbar nav {
 			display: none;
 		}
 		section#schedule .whitebox {
@@ -651,11 +654,12 @@ footer div div {
 		}
 		.blackbox {
 			padding: 2.5em;
-		}header {
+		}
+		header#about {
 			background: url(images/hippies.jpg) no-repeat right top;
 			background-size: cover;
 		}
-		section#about h1 {
+		header#about h1 {
 			font-size: 2.5em;
 		}
 		section#schedule div#saturday div#reception {
@@ -715,12 +719,12 @@ footer div div {
 		body {
 			font-size: 14px;
 		}
-		header h1 {
+		div#topbar h1 {
 			visibility: hidden;
 			display: none;
 			width: 0;
 		}
-		header h1#mobile-hdr {
+		div#topbar h1#mobile-hdr {
 			visibility: visible;
 			display: inline;
 			width: initial;
@@ -738,7 +742,7 @@ footer div div {
 			font-size: 3em;
 			margin-top: .5em;
 		}
-		section#about h1 {
+		header#about h1 {
 			font-size: 2em;
 		}
 		section#schedule .column-four, section#mpls .column-two {
@@ -786,13 +790,16 @@ footer div div {
 		a.pinkbutton {
 			width: 100%%;
 		}
-		header {
+		header#about {
 			background: url(images/hippies.jpg) no-repeat right top;
 			background-size: cover;
 			height: 202px;
 		}
-		section#about h1 {
-			font-size: 1.85em;
+		header#about div div {
+			bottom: 0;
+		}
+		header#about h1 {
+			font-size: 1.75em;
 		}
 		section#schedule div#saturday div.wrapper {
 			float: none;
@@ -869,8 +876,11 @@ footer div div {
 }
 
 @media only screen and (max-width: 360px) {
-		header h2 {
+		div#topbar h2 {
 			visibility: hidden;
+		}
+		header#about div div {
+			padding: 1em;
 		}
 		section#mpls section#food .icon {
 			width: 20%;
@@ -884,9 +894,12 @@ footer div div {
 }
 
 @media only screen and (max-width: 320px) {
-		header {
+		header#about {
 			background: url(images/hippies.jpg) no-repeat right;
 			background-size: cover;
 			height: 352px;
+		}
+		header#about div div {
+			padding: 1em 1em 2em;
 		}
 }
