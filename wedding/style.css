@@ -87,6 +87,7 @@ a.pinkbutton:hover {
 
 .cursive {
 	font-family: 'Satisfy', cursive;
+	font-weight: 400;
 }
 
 .vast {
@@ -100,11 +101,6 @@ a.pinkbutton:hover {
 
 .section-padding {
 	padding: 4em 0 4em;
-}
-
-.overlay {
-	background: rgba(66,66,66,.5);
-	color: #fff;
 }
 
 .dash {
@@ -133,6 +129,7 @@ a.pinkbutton:hover {
 	background: #424242;
 	color: #fff;
 	padding: 2.5em;
+	box-shadow: 0 10px 15px rgba(0,0,0,.5);
 }
 /******************
 	Top Nav
@@ -230,6 +227,7 @@ header#about h1 {
 	text-align: center;
 	font-size: 3em;
 	text-shadow: 10px 15px 15px rgba(0,0,0,.5);
+	font-weight: 800;
 }
 
 header#about h1 span.small {
@@ -373,12 +371,11 @@ section#gifts .column-three {
 	float: left;
 	width: 33.33%;
 	margin-top: 2em;
-	padding: 1em;
+	padding-left: 1em;
 }
 
 section#gifts h2 {
-	font-size: 2em;
-	font-weight: 400;
+	font-size: 3em;
 }
 
 section#gifts h3 {
@@ -401,36 +398,26 @@ section#rsvp iframe {
 }
 
 /******************
- Footer
- ******************
+ 	Footer
+ ******************/
 
 footer {
-	background: #424242;
-	color: #fff;
-	padding: 3em 0 0;
+	background: url(images/snorkel.jpg) center top;
 	font-family: "Raleway", sans-serif;
+	height: 380px;
 }
 
-footer h1 {
-	font-size: 3em;
-	color: #CCB0B5;
+footer .overlay-black {
+	background: rgba(66,66,66,.5);
+	color: #fff;
+	text-align: center;
+	padding: 4em 0;
+	height: inherit;
 }
 
-footer h2 {
-	font-size: 1.5em;
-	font-weight: 400;
+footer p+h3 {
+	padding-top: 1em;
 }
-
-footer h3 {
-	margin-top: 1.5em;
-}
-
-footer div div {
-	float: left;
-	width: 33.33%;
-	margin: 0 auto 3em;
-	padding-left: 6em;
-}/
 
 /*********************
 	Hamburger Menu
@@ -517,9 +504,6 @@ footer div div {
 		}
 		header#about {
 			height: 680px;
-		}
-		footer div div {
-			padding-left: 2.5em;
 		}	
  } 
 
@@ -558,9 +542,6 @@ footer div div {
 		}
 		section#schedule div#saturday div#afterparty {
 			margin-left: .5em;
-		}
-		footer div div {
-			padding-left: 2em;
 		}
 }
 
@@ -611,6 +592,9 @@ footer div div {
 		}
 		section#mpls section#food .links {
 			width: 70%;
+		}
+		section#gifts .column-three {
+			width: 50%;
 		}
 }
 
@@ -668,9 +652,6 @@ footer div div {
 			margin: 2em auto;
 			padding: 1em;
 		}
-		footer div div {
-			padding-left: 1em;
-		}
 }
 
 @media only screen and (max-width: 776px) {
@@ -685,6 +666,12 @@ footer div div {
 		}
 		section#mpls .column-two {
 			padding: .25em;
+		}
+		section#gifts .icon {
+			width: 20%;
+		}
+		section#gifts .links {
+			width: 80%;
 		}
 		section#rsvp iframe {
 			max-height: 1150px;
@@ -754,6 +741,24 @@ footer div div {
 		section#mpls section#food .column-four {
 			height: 7em;
 		}
+		section#gifts .column-three {
+			width: 100%;
+			padding: 0;
+		}
+		section#gifts h2 {
+			font-size: 2em;
+		}
+		section#gifts h3 {
+			font-size: 1.5em;
+		}
+		footer {
+			background: url(images/snorkel.jpg) no-repeat center top;
+			background-size: cover;
+			height: 550px;
+		}
+		footer .overlay-black {
+			padding: 10em 0;
+		}
 }
 
 @media only screen and (max-width: 480px) {
@@ -769,7 +774,7 @@ footer div div {
 		header#about {
 			background: url(images/hippies.jpg) no-repeat right top;
 			background-size: cover;
-			height: 202px;
+			height: 300px;
 		}
 		header#about div div {
 			bottom: 0;
@@ -822,32 +827,11 @@ footer div div {
 		section#mpls section#food .links {
 			width: 85%;
 		}
-		section#gifts div:last-child {
-			padding: 0 1em;
-		}
-		section#gifts div#left {
-			padding: 1.5em;
-		}
-		section#gifts div#left h3 {
-			font-size: 2.6em;
-		}
-		section#gifts div.column-two {
-			width: 100%;
-		}
-		section#gifts div.column-two:first-child {
-			margin-bottom: 1.5em;
-		}
-		section#gifts div.column-two:last-child {
-			padding: 0;
-		}
 		section#rsvp iframe {
 			height: 1130px;
 		}
-		footer div div {
-			float: none;
-			width: 100%;
-			padding: 0;
-			text-align: center;
+		footer {
+			height: 480px;
 		}
 }
 
@@ -867,6 +851,12 @@ footer div div {
 		section#rsvp iframe {
 			height: 1150px;
 		}
+		footer {
+			height: 360px;
+		}
+		footer .overlay-black {
+			padding: 8em 0;
+		}
 }
 
 @media only screen and (max-width: 320px) {
@@ -877,5 +867,11 @@ footer div div {
 		}
 		header#about div div {
 			padding: 1em 1em 2em;
+		}
+		footer {
+			height: 320px;
+		}
+		footer .overlay-black {
+			padding: 6em 0;
 		}
 }
