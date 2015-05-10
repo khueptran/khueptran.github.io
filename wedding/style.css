@@ -103,6 +103,10 @@ a.pinkbutton:hover {
 	padding: 4em 0 4em;
 }
 
+.title-padding {
+	margin-bottom: 1em;
+}
+
 .dash {
 	border-top: 2px dashed #424242;
 }
@@ -131,6 +135,15 @@ a.pinkbutton:hover {
 	padding: 2.5em;
 	box-shadow: 0 10px 15px rgba(0,0,0,.5);
 }
+
+.overlay-black {
+	background: rgba(66,66,66,.5);
+	color: #fff;
+}
+
+.overlay-white {
+	background: rgba(255,255,255,.5);
+}
 /******************
 	Top Nav
 *******************/	
@@ -138,10 +151,10 @@ a.pinkbutton:hover {
 div#topbar {
 	position: fixed;
 	background: rgba(66,66,66,.8);
+	color: #fff;
 	top: 0;
 	right: 0;
 	left: 0;
-	color: #fff;
 	max-height: 6em;
 	box-shadow: 0 10px 15px rgba(0,0,0,.5);
 	padding: 1em;
@@ -183,8 +196,8 @@ div#topbar nav a {
     display: inline-block;
     padding: .5em 1em;
     margin: 0 .3em 0;
+    color: #fff;
     text-transform: uppercase;
-	color: #fff;
 	letter-spacing: .1em;
 	font-family: 'Raleway', sans-serif;
  }
@@ -203,14 +216,13 @@ div#topbar nav a+a {
 
 header#about {
 	height: 825px;
-	background: url(images/hippies.jpg) fixed no-repeat center top;
+	background: url(images/hippies.jpg) no-repeat center top;
 	background-size: cover;
 	padding: 0;
-	margin: 0;
+	margin:0;
 }
 
-header#about div.overlay-white {
-	background: rgba(255,255,255,.5);
+header#about div.overlay-black {
 	height: inherit;
 	position: relative;
 }
@@ -225,7 +237,7 @@ header#about div div {
 
 header#about h1 {
 	text-align: center;
-	font-size: 3em;
+	font-size: 4em;
 	text-shadow: 10px 15px 15px rgba(0,0,0,.5);
 	font-weight: 800;
 }
@@ -268,10 +280,6 @@ header#about hr+p {
 /*****************
 	Schedule
 ******************/
-
-section#schedule h1 {
-	margin-bottom: 1em;
-}
 
 section#schedule div div.column-four h2 {
 	margin-bottom: 1.2em;
@@ -402,21 +410,24 @@ section#rsvp iframe {
  ******************/
 
 footer {
-	background: url(images/snorkel.jpg) center top;
 	font-family: "Raleway", sans-serif;
-	height: 380px;
-}
-
-footer .overlay-black {
-	background: rgba(66,66,66,.5);
-	color: #fff;
 	text-align: center;
-	padding: 4em 0;
-	height: inherit;
 }
 
-footer p+h3 {
-	padding-top: 1em;
+footer div.maxwidth {
+	margin-top: 3em;
+	border-top: 2px solid #424242;
+	border-bottom: 2px solid #424242;
+	padding: 3em 0;
+}
+
+footer div#container {
+	width: 66.33%;
+	margin: 0 auto;
+}
+
+footer .vast {
+	font-size: 1.5em;
 }
 
 /*********************
@@ -504,7 +515,7 @@ footer p+h3 {
 		}
 		header#about {
 			height: 680px;
-		}	
+		}
  } 
 
 @media only screen and (max-width: 1152px) {
@@ -622,6 +633,12 @@ footer p+h3 {
 		header#about h1 {
 			font-size: 2.5em;
 		}
+		section#schedule h1 {
+			margin-bottom: 0;
+		}
+		section#schedule div div.column-four h2 {
+			margin-top: 1em;
+		}
 		section#schedule div#saturday div#reception {
 			margin-right: 1em;
 		}
@@ -675,6 +692,9 @@ footer p+h3 {
 		}
 		section#rsvp iframe {
 			max-height: 1150px;
+		}
+		footer div#container {
+			width: 80%;
 		}
 }
 
@@ -751,13 +771,11 @@ footer p+h3 {
 		section#gifts h3 {
 			font-size: 1.5em;
 		}
-		footer {
-			background: url(images/snorkel.jpg) no-repeat center top;
-			background-size: cover;
-			height: 550px;
+		footer div#container {
+			width: 100%;
 		}
-		footer .overlay-black {
-			padding: 10em 0;
+		footer .column-two {
+			width: 100%;
 		}
 }
 
@@ -830,9 +848,6 @@ footer p+h3 {
 		section#rsvp iframe {
 			height: 1130px;
 		}
-		footer {
-			height: 480px;
-		}
 }
 
 @media only screen and (max-width: 360px) {
@@ -851,12 +866,6 @@ footer p+h3 {
 		section#rsvp iframe {
 			height: 1150px;
 		}
-		footer {
-			height: 360px;
-		}
-		footer .overlay-black {
-			padding: 8em 0;
-		}
 }
 
 @media only screen and (max-width: 320px) {
@@ -867,11 +876,5 @@ footer p+h3 {
 		}
 		header#about div div {
 			padding: 1em 1em 2em;
-		}
-		footer {
-			height: 320px;
-		}
-		footer .overlay-black {
-			padding: 6em 0;
 		}
 }
