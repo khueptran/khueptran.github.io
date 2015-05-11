@@ -496,9 +496,6 @@ footer .vast {
 .expand {
 	display: block !important; 
 }
-.ss-header-image-container, .ss-footer {
-	display:none !important;
-}
 
 /*********************
 	Media Queries
