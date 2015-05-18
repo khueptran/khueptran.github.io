@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 }
 
+h5 {
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
 h4 {
 	font-size: 1.64em;
 	font-weight: 400;
@@ -23,18 +28,19 @@ h3 {
 h2 {
 	font-size: 2em;
 	font-weight: 800;
+	text-align: center;
 }
 
 p+p {
 	margin-top: 1.2em;
 }
 
-a+p,a+h1,a+h2,a+h3,a+h4 {
+a+p,a+h1,a+h2,a+h3,a+h4,a+h5 {
 	margin-top: 1.2em;
 }
 
 a {
-	color: #CCB0B5;
+	color: #345C99;
 	text-decoration: none;
 }
 
@@ -71,6 +77,10 @@ a.pinkbutton:hover {
 	color: #fff;
 }
 
+a.rsvpbutton {
+	border: 2px solid #CCB0B5;
+}
+
 .clearfix:after { 
 	content: "."; 
 	visibility: hidden; 
@@ -94,17 +104,17 @@ a.pinkbutton:hover {
 	font-family: 'Vast Shadow', cursive;
 	font-weight: 400;
 	font-size: 4em;
-	text-align: center;
-	margin-top: .5em;
 	text-transform: uppercase;
+	text-align: center;
+	display: block;
 }
 
 .section-padding {
-	padding: 4em 0 4em;
+	padding: 5.5em 0;
 }
 
-.title-padding {
-	margin-bottom: 1em;
+.subsection-padding {
+	padding: 3em 0 0;
 }
 
 .dash {
@@ -126,14 +136,14 @@ a.pinkbutton:hover {
 .whitebox {
 	background: #fff;
 	padding: 2.5em;
-	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 
 .blackbox {
 	background: #424242;
 	color: #fff;
 	padding: 2.5em;
-	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 
 .overlay-black {
@@ -156,7 +166,7 @@ div#topbar {
 	right: 0;
 	left: 0;
 	max-height: 6em;
-	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+	box-shadow: 0 5px 5px rgba(0,0,0,.5);
 	padding: 1em;
 	z-index: 99;
 }
@@ -169,6 +179,10 @@ div#topbar h1#mobile-hdr {
 	visibility: hidden;
 	width: 0;
 	height: 0;
+}
+
+div#topbar a {
+	color: #CCB0B5;
 }
 
 div#topbar h1 {
@@ -189,7 +203,7 @@ div#topbar h1 a:hover{
 div#topbar nav {
 	position: absolute;
 	top: 1.3em;
-	right: 0;
+	right: 1em;
 }
 
 div#topbar nav a {
@@ -202,7 +216,7 @@ div#topbar nav a {
 	font-family: 'Raleway', sans-serif;
  }
 
- div#topbar nav a:hover {
+div#topbar nav a:hover {
  	font-weight: 800;
  }
 
@@ -214,20 +228,21 @@ div#topbar nav a+a {
 	Header
 ******************/	
 
-header#about {
+header {
 	height: 825px;
 	background: url(images/hippies.jpg) no-repeat center top;
 	background-size: cover;
 	padding: 0;
 	margin:0;
+	text-align: center;
 }
 
-header#about div.overlay-black {
+header .overlay-black {
 	height: inherit;
 	position: relative;
 }
 
-header#about div div {
+header div div {
 	padding:  2em;
 	position: absolute;
 	bottom: 8em;
@@ -235,45 +250,47 @@ header#about div div {
 	right: 0;
 }
 
-header#about h1 {
-	text-align: center;
+header h2 {
 	font-size: 4em;
 	text-shadow: 10px 15px 15px rgba(0,0,0,.5);
 	font-weight: 800;
 }
 
-header#about h1 span.small {
+header .small {
 	font-size: .6em;
 }
 
-header#about h1 span#two {
+header #two {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: .1em;
 }
 
-header#about h1 span#two:before {
+header #two:before {
 	content:"\2013";
 }
 
-header#about h1 span#two:after {
+header #two:after {
 	content:"\2013";
 }
 
-header#about h1 span#three {
+header #three {
 	font-weight: 400;
 	font-size: .8em;
 }
 
-header#about hr {
+header .vast {
+	display: inline;
+}
+
+header hr {
 	max-width: 380px;
 	margin: 0 auto;
 }
 
-header#about hr+p {
+header p {
 	margin-top: 1.5em;
-	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -281,49 +298,48 @@ header#about hr+p {
 	Schedule
 ******************/
 
-section#schedule div div.column-four h2 {
+section#schedule .column-four h3 {
 	margin-bottom: 1.2em;
 	border-bottom: 2px solid #424242;
 	padding-bottom: .5em;
 	width: 100%;
+	font-size: 1.5em;
 }
 
-section#schedule div#saturday {
+section#schedule #saturday {
 	width: 50%;
 }
 
-section#schedule div#saturday div.wrapper {
+section#schedule #saturday .wrapper {
 	float: left;
 	width: 50%;
 }
 
-section#schedule div#saturday div#reception {
+section#schedule #saturday #reception {
 	margin-right: 1em;
 }
 
-section#schedule div#saturday div#afterparty {
+section#schedule #saturday #afterparty {
 	margin-left: 1em;
 }
 
-section#schedule a.button {
+section#schedule .button {
 	width: 100%;
 }
 
 /*******************
-	Loctation 
+	Location 
 ********************/
 
-section#mpls h2 {
+section#mpls h3 {
 	font-size: 3em;
 	width: 100%;
 }
 
-section#mpls h3 {
+section#mpls section#food h4 {
 	font-size: 2em;
 	text-transform: lowercase;
-	margin: 1em 0 .5em;
 	border-bottom: 2px solid #424242;
-	padding-bottom: .5em;
 }
 
 section#mpls section#lodging a.button {
@@ -334,11 +350,7 @@ section#mpls #gettingaround .mobile-col:last-child {
 	margin-top: 1.2em;
 }
 
-section#mpls section#food {
-	margin-top: 2em;
-}
-
-section#mpls section#food h3 {
+section#mpls section#food h4 {
 	font-weight: 400;
 	margin-bottom: 1em;
 }
@@ -366,7 +378,7 @@ section#mpls section#food img {
 	width: 75%;
 }
 
-section#mpls section#food h4 a {
+section#mpls section#food h5 a {
 	color: #424242;
 	font-size: .75em;
 }
@@ -379,14 +391,14 @@ section#gifts .column-three {
 	float: left;
 	width: 33.33%;
 	margin-top: 2em;
-	padding-left: 1em;
-}
-
-section#gifts h2 {
-	font-size: 3em;
+	padding-right: 3em;
 }
 
 section#gifts h3 {
+	font-size: 3em;
+}
+
+section#gifts h4 {
 	font-size: 1.5em;
 	font-weight: 400;
 }
@@ -414,20 +426,19 @@ footer {
 	text-align: center;
 }
 
-footer div.maxwidth {
-	margin-top: 3em;
-	border-top: 2px solid #424242;
-	border-bottom: 2px solid #424242;
-	padding: 3em 0;
-}
-
 footer div#container {
 	width: 66.33%;
 	margin: 0 auto;
+	border-top: 2px solid #424242;
+	border-bottom: 2px solid #424242;
 }
 
 footer .vast {
 	font-size: 1.5em;
+}
+
+footer .subsection-padding {
+	padding: 2em 0;
 }
 
 /*********************
@@ -436,7 +447,7 @@ footer .vast {
 .mobile-nav {
 	width: 40%;
 	position: absolute;
-	top: .3em;
+	top: .5em;
 	right: 0;
 	padding: 1.5em 0 0;
 	display: none;
@@ -475,18 +486,25 @@ footer .vast {
 .responsive-menu{
 	display: none;
 	margin-top: 4em;
-	background: rgb(66,66,66);
-	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+	background: rgba(66,66,66,.9);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 
-.responsive-menu a {
+div#topbar .responsive-menu a {
 	display: block;
     padding: 1em 0;
     text-transform: uppercase;
-	color: #fff;
 	letter-spacing: .1em;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	color: #fff;
+}
+
+div#topbar .responsive-menu a.rsvpbutton {
+	background: #CCB0B5;
+	color: #424242;
+	border: none;
+	font-weight: 800;
 }
 
 .responsive-menu a:hover {
@@ -505,13 +523,16 @@ footer .vast {
 		body {
 			transition: all .3s ease;
 		}
-		header#about {
+		header {
 			height: 680px;
+		}
+		section#lodging .whitebox .mobile-button{
+			padding-top: .5em;
 		}
  } 
 
 @media only screen and (max-width: 1152px) {
-		h2 {
+		h3 {
 			font-size: 1.5em;
 		}
 		.mobile-nav {
@@ -542,9 +563,31 @@ footer .vast {
 		}
 }
 
+@media only screen and (max-width: 1119px) {
+		section#lodging .whitebox, .blackbox {
+			min-height: 345.188px;
+		}
+}
+
+@media only screen and (max-width: 1058px) {
+		section#lodging .whitebox, .blackbox {
+			min-height: 365.188px;
+		}
+}		
+
+@media only screen and (max-width: 1023px) {
+		section#schedule .whitebox {
+			min-height: 367.375px;
+		}
+		section#lodging .whitebox .mobile-button{
+			padding-top: 3.5em;
+		}
+}
+
 @media only screen and (max-width: 1006px) {
 		section#schedule .whitebox {
 			padding: 1.75em;
+			min-height: 398.375px;
 		}
 		section#schedule .blackbox {
 			padding: 1.75em;
@@ -558,18 +601,18 @@ footer .vast {
 		section#schedule div#saturday div#reception {
 			margin-right: .5em;
 		}
-
 		section#schedule div#saturday div#afterparty {
 			margin-left: .5em;
 		}
 }
 
 @media only screen and (max-width: 930px) {
-		header#about h1 {
+		header h2 {
 			font-size: 2.5em;
 		}
 		section#schedule .whitebox {
 			padding: 1.25em;
+			min-height: 359.375px;
 		}
 		section#schedule .blackbox {
 			padding: 1.25em;
@@ -597,6 +640,11 @@ footer .vast {
 		}
 }
 
+@media only screen and (max-width: 917px) {
+		section#schedule .whitebox {
+			min-height: 382.375px;
+		}
+
 @media only screen and (max-width: 850px) {
 		a.button {
 			width: 100%%;
@@ -614,14 +662,14 @@ footer .vast {
 		.blackbox {
 			padding: 2.5em;
 		}
-		header#about {
+		header {
 			background: url(images/hippies.jpg) no-repeat right top;
 			background-size: cover;
 		}
-		section#schedule h1 {
+		section#schedule h2 {
 			margin-bottom: 0;
 		}
-		section#schedule div div.column-four h2 {
+		section#schedule div div.column-four h3 {
 			margin-top: 1em;
 		}
 		section#schedule div#saturday div#reception {
@@ -640,6 +688,9 @@ footer .vast {
 		section#schedule div#saturday {
 			width: 100%%;
 		}
+		section#schedule .whitebox {
+			min-height: initial;
+		}
 		section#mpls section#food .column-four {
 			width: 50%;
 		}
@@ -656,18 +707,37 @@ footer .vast {
 		}
 }
 
-@media only screen and (max-width: 776px) {
-		section#mpls .whitebox {
-			padding: 1.25em;
+@media only screen and (max-width: 843px) {
+		section#lodging div:nth-child(3) .mobile-button {
+			padding-top: 2em;
 		}
-		section#mpls .blackbox {
+}	
+
+@media only screen and (max-width: 785px) {
+		section#lodging div:nth-child(2) .mobile-button {
+			padding-top: 2em;
+		}
+}
+
+@media only screen and (max-width: 781px) {
+		section#lodging div:nth-child(4) .mobile-button {
+			padding-top: 2em;
+		}
+}
+
+@media only screen and (max-width: 776px) {
+		section#mpls .whitebox, .blackbox {
 			padding: 1.25em;
+			min-height: 325.188px;
 		}
 		section#mpls .column-four {
 			padding: .25em;
 		}
 		section#mpls .column-two {
 			padding: .25em;
+		}
+		section#lodging div.whitebox .mobile-button{
+			padding-top: 3.5em;
 		}
 		section#gifts .icon {
 			width: 20%;
@@ -680,6 +750,24 @@ footer .vast {
 		}
 		footer div#container {
 			width: 80%;
+		}
+}
+
+@media only screen and (max-width: 700px) {
+		section#lodging div:nth-child(3) .mobile-button {
+			padding-top: 2em;
+		}
+}
+
+@media only screen and (max-width: 643px) {
+		section#lodging div:nth-child(2) .mobile-button {
+			padding-top: 2em;
+		}
+}
+
+@media only screen and (max-width: 639px) {
+		section#lodging div:nth-child(4) .mobile-button {
+			padding-top: 2em;
 		}
 }
 
@@ -697,7 +785,31 @@ footer .vast {
 			display: inline;
 			width: initial;
 		}
+		section#lodging .whitebox, .blackbox {
+			min-height: 297.797px;
+		}
+		section#lodging div.whitebox .mobile-button{
+			padding-top: 3.5em;
+		}
 }		
+
+@media only screen and (max-width: 615px) {
+		section#lodging div:nth-child(3) .mobile-button {
+			padding-top: 2em;
+		}
+}
+
+@media only screen and (max-width: 565px) {
+		section#lodging div:nth-child(2) .mobile-button {
+			padding-top: 2em;
+		}
+}
+
+@media only screen and (max-width: 561px) {
+		section#lodging div:nth-child(4) .mobile-button {
+			padding-top: 2em;
+		}
+}
 
 @media only screen and (max-width: 550px) {
 		.whitebox {
@@ -710,7 +822,7 @@ footer .vast {
 			font-size: 3em;
 			margin-top: .5em;
 		}
-		header#about h1 {
+		header h2 {
 			font-size: 2em;
 		}
 		section#schedule .column-four, section#mpls .column-two {
@@ -723,10 +835,10 @@ footer .vast {
 		section#schedule div#saturday div#afterparty {
 			margin-left: .5em;
 		}
-		section#mpls h2.cursive {
+		section#mpls h3.cursive {
 			font-size: 2em;
 		}
-		section#mpls h3 {
+		section#mpls h4 {
 			font-size: 1.5em;
 		}
 		section#mpls .mobile-col {
@@ -743,6 +855,12 @@ footer .vast {
 			padding-left: .5em;
 			margin-top: 0;
 		}
+		section#mpls #lodging div.whitebox .mobile-button{
+			padding-top: 0;
+		}
+		section#mpls #lodging .whitebox, .blackbox {
+			min-height: initial;
+		}
 		section#mpls section#food .column-four {
 			height: 7em;
 		}
@@ -750,10 +868,10 @@ footer .vast {
 			width: 100%;
 			padding: 0;
 		}
-		section#gifts h2 {
+		section#gifts h3 {
 			font-size: 2em;
 		}
-		section#gifts h3 {
+		section#gifts h4 {
 			font-size: 1.5em;
 		}
 		footer div#container {
@@ -763,6 +881,11 @@ footer .vast {
 			width: 100%;
 		}
 }
+
+@media only screen and (max-width: 512px) {
+		section#lodging .blackbox .mobile-col p {
+			min-height: 60px;
+		}
 
 @media only screen and (max-width: 480px) {
 		body {
@@ -777,15 +900,15 @@ footer .vast {
 		a.pinkbutton {
 			width: 100%%;
 		}
-		header#about {
+		header {
 			background: url(images/hippies.jpg) no-repeat right top;
 			background-size: cover;
 			height: 300px;
 		}
-		header#about div div {
+		header div div {
 			bottom: 0;
 		}
-		header#about h1 {
+		header h2 {
 			font-size: 1.75em;
 		}
 		section#schedule div#saturday div.wrapper {
@@ -822,6 +945,9 @@ footer .vast {
 			padding: 0;
 			margin-top: 1em;
 		}
+		section#lodging .blackbox .mobile-col p {
+			min-height: initial;
+		}
 		section#mpls section#food .column-four {
 			width: 100%;
 			height: initial;
@@ -842,7 +968,7 @@ footer .vast {
 		div#topbar h2 {
 			visibility: hidden;
 		}
-		header#about div div {
+		header div div {
 			padding: 1em;
 		}
 		section#mpls section#food .icon {
@@ -857,12 +983,12 @@ footer .vast {
 }
 
 @media only screen and (max-width: 320px) {
-		header#about {
+		header {
 			background: url(images/hippies.jpg) no-repeat right;
 			background-size: cover;
 			height: 352px;
 		}
-		header#about div div {
+		header div div {
 			padding: 1em 1em 2em;
 		}
 }
